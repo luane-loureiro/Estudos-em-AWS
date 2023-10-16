@@ -55,8 +55,30 @@ se suas nececidades mudarem, o software poderá mudar de formamais rápida, fác
 - Ema infraestrutura de nuvem em seu próprio data center
 - Esse tipo de implantação não ofereça muitos dos benefícios da computação em nuvem, ela fornece recursos dedicados.
 
+## Nuvem X Local
+Nuvem:
+- não há investimento antecipado
+- Baixo Valor recorrente
+- Foco na inovação
+- Capacidade flexível
+- velocidade e a agilidade
+- Alcance Global sob Demanda
 
+Nuvem privada (loca):
+- Grande compras Iniciais
+- Mão de obra, patches e ciclos de atualização
+- Administração de sistemas
+- Capacidade fixa
+- Ciclo de aquisição e de configuiração longos
+- Regiões geográficas limitadas
 
+### O que é possível fazer na Nuvem?
+- hospedagem de Aplicativos
+- Backup e Armazenamento
+- Entrega de Conteúdo
+- Sites
+- TI corporativa
+- Banco de Dados
 
 
 
