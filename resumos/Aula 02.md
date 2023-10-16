@@ -52,7 +52,8 @@ se suas nececidades mudarem, o software poderá mudar de formamais rápida, fác
 - O método mais comum de implantação híbrida é entre a nuvem e a infraestrutura local existente. A infraestrutura local está localizada nos limites físicos de uma empresa, geralmente no data center. Um modelo de implantação híbrida é usado para estender a infraestrutura de uma organização para a nuvem, ao mesmo tempo em que conecta os recursos da nuvem a um sistema interno.
 
 ###  Nuvem Local Ou privada 🏚️
-- uma infraestrutura de nuvem em seu próprio data center
+- Ema infraestrutura de nuvem em seu próprio data center
+- Esse tipo de implantação não ofereça muitos dos benefícios da computação em nuvem, ela fornece recursos dedicados.
 
 
 
