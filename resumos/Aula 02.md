@@ -1,4 +1,4 @@
-# Entendendo A computação em Nuvem
+# Aula 02 - Entendendo A computação em Nuvem
 - Nuvem éum computador localizado em algum outro lugar,acessado pela internet e usado de alguma forma.
 - A nuvem consiste em computadores servidores em grandes data centers em diferentes lugares do mundo.
 - Entrega sob demanda de podercomputacional, banco de dados, armazenamento, aplicativos e outros recursos de TI.
