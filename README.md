@@ -12,6 +12,7 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 1 | [Resumo]() |
 | Aula 2 | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2002.md) |
 | Aula 3 |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2003.md) |
+| Aula 4 |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2004.md) |
 
 ## 🌐 Outros Links 
 - [Escola da Nuvem](https://escoladanuvem.org/)
