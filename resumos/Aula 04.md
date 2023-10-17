@@ -48,10 +48,137 @@ Legenda:
 
 • Armazenamento conectado à rede (NAS) 
 
-## O que são serviços da web?
-
-
 • Sistema de gerenciamento de banco de dados relacional (RDBMS) 
 
 • Rede de área de armazenamento (SAN)
+
+
+## O que são serviços web?
+- é qualquer software disponibilizado pela Internet ou em redes privadas (intranet).
+- usa um formato padronizado para solicitação e resposta de uma interação de interface de programação de aplicativo (API).
+- não está vinculada a nenhum sistema operacional ou linguagem de programação. 
+
+## Serviços da AWS
+### O que é AWS?
+É um provedor de serviços denuvem seguro que fornece vários serviços diferentes para:
+- Análise
+- Conteiners
+- Internet das coisas
+- Aplicativo de integração
+- Envolvimento com clientes
+- Machine lerning
+- robótica
+- AR e VR
+- Banco de dados
+- Gerenciamento e governaça
+- Satélite
+- gerenciamento de custos da aws
+- ferramenta do desenvolvedor
+- serviços de mídia
+- Segurança, identidade e conformidade
+- Blockchain
+- Usuário final computação
+- Migração e transferencia
+- Armazenamento
+- Applicativos empresariais
+- Plataformas moveis e web front end
+- Redes de entrega de conteúdo
+- computação
+- tecnologia de jogos
+- tecnologias quanticas.
+
+Esses produtos são entregues por meio da Internet. Portanto, você tem acesso sob demanda à computação, ao armazenamento, à rede, ao banco de dados e a outros recursos de TI necessários para seus projetos.
+O serviço que você escolhe depende dos seus objetivos empresariais e dos requisitos de tecnologia.
+
+Exemplos de serviçoscomputacionais:
+- Amazon EC2: você quer ter controle total sobre seus recursos de computação da AWS.
+- AWS Lambda: você quer executar seu código e não gerenciar ou provisionar servidores.
+- AWS Elastic Beanstalk: você quer um serviço que implante, gerencie e dimensione os aplicativos web para você.
+- Amazon Lightsail: você precisa de uma plataforma em nuvem leve para um aplicativo web simples.
+- AWS Batch: você precisa executar centenas de milhares de cargas de trabalho em batch.
+- AWS Outposts: você quer executar a infraestrutura da AWS em seu data center local.
+- Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS) ou AWS Fargate: você quer implementar uma arquitetura de microsserviços ou de contêinere
+- VMware Cloud on AWS: você tem uma plataforma de virtualização de servidor local e quer migrá-la para a AWS.
+
+## serviços Mais Usados
+### Serviços computacionais: 
+- Amazon EC2 - Amazon Elastic Compute Cloud 
+- AWS Lambda
+- AWS Elastic Beanstalk 
+- Amazon EC2 Auto Scaling 
+- Amazon ECS - Amazon Elastic Container Service 
+- Amazon EKS - Amazon Elastic Kubernetes Service
+- Amazon ECR - Amazon Elastic Container Registry 
+- AWS Fargate
+
+### Serviços de segurança, identidade e conformidade:
+- IAM -  AWS Identity and Access Management
+- Amazon Cognito
+- AWS Shield
+- AWS Artifact
+- AWS KMS - AWS Key Management Service
+
+### Serviços de armazenamento
+- Amazon S3 - Amazon Simple Storage Service 
+- Amazon S3 Glacier
+- Amazon EFS - Amazon Elastic File System
+- Amazon EBS - Amazon Block Store
+
+### Serviços de banco de dados: • 
+- Amazon RDS - Amazon Relational Database Service
+- Amazon DynamoDB
+- Amazon Redshift
+- Amazon Aurora
+
+### Serviços de rede e de entrega de conteúdo:
+- Amazon VPC - Amazon Virtual Private Cloud 
+- Amazon Route 53
+- Amazon CloudFront
+- Elastic Load Balancing
+
+### Serviços de gerenciamento e governança:
+- Amazon CloudWatch
+- AWS Trusted Advisor
+- AWS CloudTrail
+- AWS Well-Architected Tool
+- AWS Auto Scaling
+- AWS Command Line Interface
+- AWS Config
+- Console de gerenciamento da AWS
+- AWS Organization
+
+### Serviços de gerenciamento de custos da AWS:
+- AWS Cost and Usage Report
+- AWS Budgets
+- AWS Cost Explore
+
+## Três Maneiras de interagir com A AWS
+### Console de gerenciamento da AWS
+- Interface gráfica fácil de usar
+- O console também pode ser acessado em um aplicativo móvel
+
+### AWS Command Line Interface (AWS CLI) 
+- Acesso a serviços por comandos ou scripts específicos
+
+### Kits de Desenvolvimento de Software (SDKs) da AWS 
+- Acesse serviços diretamente do seu código (como Java, Python e outros)
+
+
+## AWS Cloud Adoption Framework (AWS CAF)
+Para que qualquer organização migre seu portfólio de TI para a nuvem com êxito, três elementos devem estar alinhados:
+- Pessoas
+- Processos
+- Tecnologia
+
+A orientação e as práticas recomendadas para a framework ajudam você a construir uma abordagem abrangente para lidar com a computação em nuvem em sua organização e em todo o ciclo de vida da TI. 
+Essas diretrizes ajudam cada unidade de sua organização a atualizar habilidades, adaptar processos existentes e apresentar novos processos.
+
+## Documentação da AWS
+- A AWS fornece documentação abrangente e detalhada sobre cada serviço da AWS. Os guias e as referências de API são organizados por categoria de serviço.
+- Use a Documentação da AWS como seu principal recurso para obter ajuda.
+
+  
+
+
+  
 
