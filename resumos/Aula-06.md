@@ -61,6 +61,23 @@
 
 
 ## Infraestrutura global da AWS
-Em agosto de 2020, a infraestrutura global da AWS incluía 24 Regiões e 77 Zonas de Disponibilidade. A AWS expande constantemente sua infraestrutura global adicionando mais Regiões. Ao expandir a infraestrutura, a AWS ajuda os clientes a obter menor latência e taxa de transferência mais alta, bem como a garantir que seus dados residam apenas nos locais desejados.
+- Em Outubro de 2023, a infraestrutura global da AWS incluía 32 Regiões e 102 Zonas de Disponibilidade. 
+- A AWS expande constantemente sua infraestrutura global adicionando mais Regiões.
+- Ao expandir a infraestrutura, a AWS ajuda os clientes a obter menor latência e taxa de transferência mais alta, bem como a garantir que seus dados residam apenas nos locais desejados.
 
+## Seleção de uma Região
+Ao selecionar uma Região, considere aquela que oferece os serviços de que você precisa e o local em que ela está localizada. Isso pode ajudar você a otimizar a latência e, ao mesmo tempo, reduzir custos. 
 
+Determine a Região certa para seus serviços, aplicativos e dados com base nesses fatores.
+
+#### 1) Governaça de Dados
+  As leis locais podem exigir que determinadas informações sejam mantidas dentro de limites geográficos.
+
+#### 2) Proximidade som os clientes (latencia)
+  É desejável executar os aplicativos e armazenar os dados em uma Região que esteja mais próxima possível do usuário e dos sistemas que os acessarão. Isso ajudará você a reduzir a latência.
+
+#### 3) Serviços dosponíveis
+  nem todos os serviços estão disponíveis em todas as Regiões.
+
+#### 4) Custos (variam por região)
+   há alguma variação no custo da execução de serviços, que pode depender da Região escolhida.
