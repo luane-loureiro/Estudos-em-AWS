@@ -18,7 +18,7 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 7 | Serviços e categorias da AWS |[resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2007.md)|
 | Aula 8 | Modelo de responsabilidade compartilhada da AWS | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2008.md)|
 
-## entendedno os serviços:
+## Entendendo os Serviços:
 #### - AWS Direct Connect 
 é um serviço de nuvem que vincula sua rede diretamente à AWS para oferecer performance consistente e de baixa latência.
 
