@@ -14,7 +14,8 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 3 |Vantagens Da programaçãom em Nuvem| [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2003.md) |
 | Aula 4 |O que é AWS?|[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2004.md) |
 | Aula 5 | Fundamentos da definição de preço da AWS | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2005.md)
-| Aula 6 | Visão geral da infraestrutura AWS |[resumo](#)|
+| Aula 6 | Visão geral da infraestrutura AWS |[resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2006.md)|
+| Aula 6 | Serviços e categorias da AWS |[resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2007.md)|
 
 ## entendedno os serviços:
 #### - AWS Direct Connect 
