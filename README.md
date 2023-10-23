@@ -38,6 +38,16 @@ Um kit de desenvolvimento de software (SDK) é um conjunto de ferramentas de cri
 #### - AWS Fragate
 é um mecanismo de computação sem servidor para contêineres que funciona tanto com o Amazon Elastic Container Service (ECS) quanto com o Amazon Elastic Kubernetes (EKS).
 
+#### - O AWS Trusted Advisor 
+é uma ferramenta on-line que analisa o ambiente da AWS e fornece orientações e recomendações em tempo real para ajudar você a provisionar seus recursos seguindo as práticas recomendadas da AWS. 
+
+#### - O AWS Shield 
+é um serviço gerenciado de proteção contra negação de serviço distribuída (DDoS) que protege os aplicativos executados na AWS. 
+Ele fornece detecção sempre ativa e mitigações em linha automáticas que minimizam o tempo de inatividade e a latência dos aplicativos.
+
+#### - O Amazon Chime 
+é um serviço de comunicação que permite realizar reuniões, conversar e realizar chamadas de negócios dentro e fora da sua organização, usando um só aplicativo.
+
 
 
 ## 🌐 Outros Links 
