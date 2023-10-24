@@ -18,6 +18,9 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 7 | Serviços e categorias da AWS |[resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2007.md)|
 | Aula 8 | Modelo de responsabilidade compartilhada da AWS | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2008.md)|
 | Aula 9 | Amazon Simple Storage Service (Amazon S3) | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2009.md)|
+| Aula 10 | AWS Elastic Compute (Amazon EC2) | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2010.md)|
+
+AWS Elastic Compute
 
 ## Entendendo os Serviços:
 #### - AWS Direct Connect 
