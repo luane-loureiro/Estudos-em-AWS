@@ -41,7 +41,7 @@
  
   ## Objeto do Amazon S3 e estrutura de URL do bucket
  
-  ![ imagem ] ( https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/63397d54-cfb1-4803-a9ca-598520d37f40 )
+  ![ imagem ]( https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/63397d54-cfb1-4803-a9ca-598520d37f40 )
  
  
   O exemplo mostra como um URL de bucket é estruturado. O código da região vem primeiro, seguido por amazonaws.com e o nome do bucket
