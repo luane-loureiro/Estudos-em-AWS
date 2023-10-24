@@ -1,68 +1,67 @@
- # Amazon Simple Storage Service (Amazon S3) 
- ## Managed Cloud Storage Solution 
- - data is stored as objects in buckets 🪣 
- - Unlimited storage 
- - a single object can be up to 5tb 
- - designed for 11 nine (99.999999999%) durability 
- - granular access to buckets and objects 
- - Objects can be virtually any data file, such as documents, images or videos. 
- - When adding objects to a bucket, give them a unique name, which is called the object key. 
- - By default, data is private, and you have the option to encrypt it 
- - Data is stored redundantly 
- - It is possible to recover data at any time and anywhere via the Internet 
+# Serviço de armazenamento simples da Amazon (Amazon S3)
+  ## Solução gerenciada de armazenamento em nuvem
+  - os dados são armazenados como objetos em buckets 🪣
+  - Armazenamento ilimitado
+  - um único objeto pode ter até 5 TB
+  Projetado para durabilidade de 11 nove (99,999999999%)
+  - acesso granular a buckets e objetos
+  - Os objetos podem ser praticamente qualquer arquivo de dados, como documentos, imagens ou vídeos.
+  - Ao adicionar objetos a um bucket, dê a eles um nome exclusivo, chamado chave do objeto.
+  - Por padrão, os dados são privados e você tem a opção de criptografá-los
+  - Os dados são armazenados de forma redundante
+  - É possível recuperar dados a qualquer hora e em qualquer lugar através da Internet
  
- ## Amazon S3 Storage classes 
- #### - Amazon S3 Standard 
- High-durability, high-availability, and high-performance object storage for frequently accessed data. Because it provides low latency and high throughput, Amazon S3 Standard is suitable for many use cases, such as cloud applications, dynamic websites, content distribution, mobile and gaming applications, and big data analytics. 
+  ## Classes de armazenamento do Amazon S3
+  #### - Padrão Amazon S3
+  Armazenamento de objetos de alta durabilidade, alta disponibilidade e alto desempenho para dados acessados com frequência. Por fornecer baixa latência e alta taxa de transferência, o Amazon S3 Standard é adequado para muitos casos de uso, como aplicativos em nuvem, sites dinâmicos, distribuição de conteúdo, aplicativos móveis e de jogos e análise de big data.
  
- #### - Amazon S3 Intelligent-Tiering 
- High-durability, high-availability, and high-performance object storage for frequently accessed data. Because it provides low latency and high throughput, Amazon S3 Standard is suitable for many use cases, such as cloud applications, dynamic websites, content distribution, mobile and gaming applications, and big data analytics. 
+  #### - Camadas inteligentes do Amazon S3
+  Armazenamento de objetos de alta durabilidade, alta disponibilidade e alto desempenho para dados acessados com frequência. Por fornecer baixa latência e alta taxa de transferência, o Amazon S3 Standard é adequado para muitos casos de uso, como aplicativos em nuvem, sites dinâmicos, distribuição de conteúdo, aplicativos móveis e de jogos e análise de big data.
  
- #### - Amazon S3 Standard-Infrequent Access (Amazon S3 Standard-IA) 
- used for data that is accessed less frequently but requires quick access when needed. The Amazon S3 Standard – IA category is designed to deliver the high durability, high throughput, and low latency of the Amazon S3 Standard categories, with reduced rates per GB of storage and GB of retrieval. 
- Ideal for long-term storage and backups and as a datastore for disaster recovery (DR) files. 
+  #### - Acesso infrequente ao padrão Amazon S3 (Amazon S3 Standard-IA)
+  usado para dados acessados com menos frequência, mas que exigem acesso rápido quando necessário. A categoria Amazon S3 Standard – IA foi projetada para oferecer alta durabilidade, alta taxa de transferência e baixa latência das categorias Amazon S3 Standard, com taxas reduzidas por GB de armazenamento e GB de recuperação.
+  Ideal para armazenamento e backups de longo prazo e como armazenamento de dados para arquivos de recuperação de desastres (DR).
  
- #### - Amazon S3 One Zone-Infrequent Access (Amazon S3 One Zone-IA) 
- designed for data that is accessed less frequently but requires quick access when needed. Unlike other Amazon S3 storage classes, which store data in a minimum of three Availability Zones, Amazon S3 One Zone – IA stores data in a single Availability Zone. 
- It's a great option for storing secondary backup copies of data on-premises or data that can be easily recreated. 
+  #### - Acesso pouco frequente ao Amazon S3 One Zone (Amazon S3 One Zone-IA)
+  projetado para dados que são acessados com menos frequência, mas que exigem acesso rápido quando necessário. Ao contrário de outras classes de armazenamento do Amazon S3, que armazenam dados em no mínimo três zonas de disponibilidade, o Amazon S3 One Zone – IA armazena dados em uma única zona de disponibilidade.
+  É uma ótima opção para armazenar cópias de backup secundárias de dados locais ou dados que podem ser facilmente recriados.
  
- #### - Amazon Simple Storage Service Glacier 
- a secure, durable, and low-cost class of storage for data archiving. You can reliably store any volume of data at a cost that is competitive or lower than on-premises solutions. 
+  #### - Geleira do Amazon Simple Storage Service
+  uma classe de armazenamento segura, durável e de baixo custo para arquivamento de dados. Você pode armazenar com segurança qualquer volume de dados a um custo competitivo ou inferior ao das soluções locais.
  
- #### - Amazon S3 Glacier Deep Archive 
- lowest-cost Amazon S3 storage class. It offers long-term retention and digital preservation for data that can be accessed once or twice a year. 
- 
- 
- ## Access data anywhere 
- - aws management console 
- - AWS CLI 
- - AWS SDKs 
- - Rest endpoints 
- 
- ## Amazon S3 object and bucket URL structure 
- 
- ![ image ] ( https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/63397d54-cfb1-4803-a9ca-598520d37f40 ) 
+  #### - Arquivo profundo do Amazon S3 Glacier
+  classe de armazenamento Amazon S3 de menor custo. Oferece retenção de longo prazo e preservação digital para dados que podem ser acessados uma ou duas vezes por ano.
  
  
- The example shows how a bucket URL is structured. The Region code is first, followed by amazonaws.com and the bucket name 
- An object is made up of data and any metadata that describes that file. 
+  ## Acesse dados em qualquer lugar
+  - console de gerenciamento AWS
+  -AWS CLI
+  - SDKs da AWS
+  - Pontos finais de descanso
+ 
+  ## Objeto do Amazon S3 e estrutura de URL do bucket
+ 
+  ![ imagem ] ( https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/63397d54-cfb1-4803-a9ca-598520d37f40 )
  
  
- ## Redundancy in Amazon S3 
- - When you create a bucket in Amazon S3, it is associated with a specific AWS Region. 
- - Whenever you store data in the bucket, it is stored redundantly across multiple AWS installations in the selected Region. 
- - Amazon S3 is designed to store data durably even if there is simultaneous data loss across two AWS installations. 
+  O exemplo mostra como um URL de bucket é estruturado. O código da região vem primeiro, seguido por amazonaws.com e o nome do bucket
+  Um objeto é composto de dados e quaisquer metadados que descrevam esse arquivo.
  
- ## Seamless scaling 
- - Amazon S3 automatically manages the storage behind the bucket even as the amount of data increases. This allows you to get started immediately and have your data storage grow as your application needs. 
- Amazon S3 also scales to handle a high volume of requests. You don't need to provision storage or throughput, and you'll only be charged for what you use. 
  
- ## Common Amazon S3 use cases 
- - Application asset storage 
- - Web hosting of static websites
- - Backup and Disaster Recovery (DR)
- - Staging area for big data Many more. 
+  ## Redundância no Amazon S3
+  - Quando você cria um bucket no Amazon S3, ele é associado a uma região específica da AWS.
+  - Sempre que você armazena dados no bucket, eles são armazenados de forma redundante em várias instalações da AWS na região selecionada.
+  - O Amazon S3 foi projetado para armazenar dados de maneira durável, mesmo se houver perda simultânea de dados em duas instalações da AWS.
  
+  ## Dimensionamento contínuo
+  - O Amazon S3 gerencia automaticamente o armazenamento por trás do bucket, mesmo quando a quantidade de dados aumenta. Isso permite que você comece imediatamente e aumente seu armazenamento de dados conforme a necessidade do seu aplicativo.
+  O Amazon S3 também pode ser dimensionado para lidar com um grande volume de solicitações. Você não precisa provisionar armazenamento ou taxa de transferência e só será cobrado pelo que usar.
+ 
+  ## Casos de uso comuns do Amazon S3
+  - Armazenamento de ativos de aplicativos
+  - Hospedagem de sites estáticos
+  - Backup e recuperação de desastres (DR)
+  - Área de preparação para big data Muito mais.
 ## Preços do Amazon S3
 #### Pague somente pelo que usa:
 - GBs por mês
