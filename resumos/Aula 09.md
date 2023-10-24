@@ -40,10 +40,8 @@
   - Pontos finais de descanso
  
   ## Objeto do Amazon S3 e estrutura de URL do bucket
- 
-  ![ imagem ]( https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/63397d54-cfb1-4803-a9ca-598520d37f40 )
- 
- 
+ ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/771e97ea-4dee-4aa0-af14-45338a3fd47f)
+
   O exemplo mostra como um URL de bucket é estruturado. O código da região vem primeiro, seguido por amazonaws.com e o nome do bucket
   Um objeto é composto de dados e quaisquer metadados que descrevam esse arquivo.
  
