@@ -19,15 +19,53 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 8 | Modelo de responsabilidade compartilhada da AWS | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2008.md)|
 | Aula 9 | Amazon Simple Storage Service (Amazon S3) | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2009.md)|
 | Aula 10 | AWS Elastic Compute (Amazon EC2) | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2010.md)|
-|  | AWS Elastic Beanstalk | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AWSElasticBeanstalk.md) |
-|  | Elastic Load Balancing| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/ElasticLoadBalancing.md) |
-|  | Load Balancer listeners | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/LoadBalancer-listeners.md) |
-|  | Amazon Route 53 | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/amazon-route-53.md) |
-|  | Amazon Cloud Front | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AmazonCloudFront.md) |
-|  | Lambda | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Lambda.md) |
-|  | APis And Rest.md| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/APisAndRest.md) |
-|  | Containers AWS| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/containers-aws.md) |
-|  | AWS Step Functions | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AWS-Step-Functions.md) |
+| Aula 11 | AWS Security Groups | |
+| Aula 12 | AWS IAM | |
+| Aula 13 | AWS Cloudtrail | |
+| Aula 14 |AWS Config | |
+| Aula 15 | AWS Trusted Advisor | |
+| Aula 16 | Práticas recomendadas | |
+| Aula 17 | Conformidade de segurança da AWS | |
+| Aula 18 | Recursos de segurança da AWS | |
+| Aula 19 | Amazon CloudWatch | |
+| Aula 20 | Mergulhe fundo: Amazon CloudWatch | |
+| Aula 21 | AWS Cloudtrail | |
+| Aula 22 | Integração de serviços da AWS com o Athena | |
+| Aula 23 | AWS Organizations | |
+| Aula 24 | Marcação | |
+| Aula 25 | Gerenciamento de custos e melhores práticas da AWS | |
+| Aula 26 | Estratégia de construção da AMI | |
+| Aula 27 | Modelos de lançamento do Amazon EC2 | |
+| Aula 28 | Infraestrutura como código | |
+| Aula 29 | Introdução ao JSON e YAML | |
+| Aula 30 | AWS CloudFormation | |
+| Aula 31 | Automatizando implantações com o AWS CloudFormation | |
+| Aula 32 | Solução de problemas do AWS CloudFor | |
+| Aula 33 | Amazon RDS | |
+| Aula 34 | Dynamo DB | |
+| Aula 35 | AWS Cloud Adoption Framework | |
+| Aula 36 | AWS Well Architected Framework | |
+| Aula 37 | Design bem arquitetado | |
+| Aula 38 | Confiabilidade e alta disponibilidade | |
+| Aula 39 | Transição de um data center para a nuvem | |
+| Aula 40 | AWS Identity and Access Management (IAM) | |
+| Aula 41 | AWS Command Line Interface | |
+| Aula 42 | AWS Systems Manager | |
+| Aula 43 | Ferramentas de administração e desenvolvimento | |
+| Aula 44 | Hospedar um site estático no AWS S3 | |
+| Aula 45 | Visão geral da atividade do café: crie um site no S3. | |
+| Aula 46 | Visão geral da computação (servidores) | |
+| Aula 47 | Computação na AWS | |
+| Aula 48 | Gerenciando suas instâncias da AWS | |
+| Aula 49 | AWS Elastic Beanstalk | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AWSElasticBeanstalk.md) |
+| Aula 50 | Elastic Load Balancing| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/ElasticLoadBalancing.md) |
+| Aula 51 | Load Balancer listeners | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/LoadBalancer-listeners.md) |
+| Aula 52 | Amazon Route 53 | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/amazon-route-53.md) |
+| Aula 53 | Amazon Cloud Front | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AmazonCloudFront.md) |
+| Aula 54 | Lambda | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Lambda.md) |
+| Aula 55 | APis And Rest.md| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/APisAndRest.md) |
+| Aula 56 | Containers AWS| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/containers-aws.md) |
+| Aula 57 | AWS Step Functions | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AWS-Step-Functions.md) |
 
 
 ## Entendendo os Serviços:
