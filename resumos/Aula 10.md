@@ -79,7 +79,7 @@ No entanto, para a maioria das implantações, você vai querer modificar as con
     - Computação acelerada
 #### - Os tipos de instância oferecem família, geração e tamanho 
 
-#### Denominação e tamanhos de tipo de instância do EC2 
+## Denominação e tamanhos de tipo de instância do EC2 
 
 | Nome da Instância | vCPU | Memória(GB) | Armazenamento |
 |-------------------|------|-------------|---------------|
@@ -96,5 +96,43 @@ Exemplo: t3.large
 - T é o nome da família 
 - 3 é o número da geração 
 - Large é o tamanho
+
+## Casos de uso de tipo de instância
+- Os tipos de instância variam de várias maneiras, incluindo o tipo de CPU, a contagem de CPUs ou de núcleos, o tipo de armazenamento, a quantidade de armazenamento, a quantidade de memória e o desempenho de rede.
+
+- As instâncias T3 fornecem instâncias de uso geral com desempenho com capacidade de intermitência que fornecem um nível básico de desempenho de CPU com a capacidade de intermitência acima da linha de base.
+- Os casos de uso para esse tipo de instância incluem:
+  - sites e aplicativos web
+  - ambientes de desenvolvimento
+  - servidores de compilação
+  - repositórios de código
+  - microsserviços
+  - ambientes de teste
+  - preparação e aplicativos de linha de negócios
+
+- As instâncias C5 são otimizadas para cargas de trabalho com uso intensivo de computação e oferecem alto desempenho econômico a uma taxa baixa de preço por computação.
+- Os casos de uso incluem:
+    - modelagem científica
+    - processamento em batch
+    - veiculação de anúncios
+    - jogos multijogador altamente dimensionáveis
+    - codificação de vídeo.
+ 
+- R5 são instâncias otimizadas para aplicativos com uso intensivo de memória.
+- Os casos de uso incluem:
+- bancos de dados de alto desempenho
+    - mineração e análise de dados
+    - bancos de dados na memória
+    - caches distribuídos na memória na escala da web
+    - aplicativos que executam processamento em tempo real de big data não estruturado
+    - clusters Apache Hadoop ou Apache Spark
+    - outros aplicativos empresariais.
+
+
+
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/fedbb61b-342a-4748-b3bd-70b8ed46d81e)
+
+
+
 
 
