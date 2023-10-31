@@ -19,6 +19,15 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 8 | Modelo de responsabilidade compartilhada da AWS | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2008.md)|
 | Aula 9 | Amazon Simple Storage Service (Amazon S3) | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2009.md)|
 | Aula 10 | AWS Elastic Compute (Amazon EC2) | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2010.md)|
+|  | AWS Elastic Beanstalk | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AWSElasticBeanstalk.md) |
+|  | Elastic Load Balancing| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/ElasticLoadBalancing.md) |
+|  | Load Balancer listeners | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/LoadBalancer-listeners.md) |
+|  | Amazon Route 53 | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/amazon-route-53.md) |
+|  | Amazon Cloud Front | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AmazonCloudFront.md) |
+|  | Lambda | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Lambda.md) |
+|  | APis And Rest.md| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/APisAndRest.md) |
+|  | Containers AWS| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/containers-aws.md) |
+|  | AWS Step Functions | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AWS-Step-Functions.md) |
 
 
 ## Entendendo os Serviços:
