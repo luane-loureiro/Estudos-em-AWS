@@ -1,4 +1,4 @@
-# Amazon CloudFront 
+# Aula 53 - Amazon Cloud Front 
 ## O que é o Amazon CloudFront?
 - É um serviço da Web que acelera a distribuição do conteúdo estático e dinâmico da Web, como arquivos .html, .css, .js e arquivos de imagem, para os usuários.
 - Entrega conteúdo por meio de uma rede mundial de datacenters denominados pontos de presença.
