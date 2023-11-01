@@ -1,4 +1,4 @@
-# Elastic Load Balance
+# Aula 50 - Elastic Load Balance
 
 ## O que é um balanceador de carga? 
 - Age como um diretor de tráfego que fica na frente dos servidores e encaminha as solicitações do cliente. 
