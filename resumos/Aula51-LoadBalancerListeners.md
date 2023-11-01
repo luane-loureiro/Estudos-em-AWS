@@ -1,4 +1,4 @@
-# Balanceadores de carga e ouvintes do ELB 
+# Aula 51 - Balanceadores de Carga e Ouvintes do ELB (Amazon Load Balancer Listeners)
 
 ## Balanceadores de casgas de aplicação
 
