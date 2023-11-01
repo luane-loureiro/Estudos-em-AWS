@@ -1,4 +1,4 @@
-# Amazon Aurora
+# Aula 60 - Amazon Aurora
 O Amazon Aurora é um mecanismo de banco de dados relacional totalmente gerenciado que é compatível com o MySQL e o PostgreSQL
 
 ## Aurora
