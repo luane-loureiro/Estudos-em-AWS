@@ -65,7 +65,7 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 54 | Lambda | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Lambda.md) |
 | Aula 55 | APis And Rest.md| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/APisAndRest.md) |
 | Aula 56 | Containers AWS| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/containers-aws.md) |
-| Aula 57 | AWS Step Functions | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AWS-Step-Functions.md) |
+| Aula 57 | AWS Step Functions | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula57-AwsStepFunctions.md) |
 | Aula 58 | Visão geral dos bancos de Dados | |
 | Aula 59 | Amazon Redshift | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula59-AmazonRedShift.md)|
 | Aula 60 | Amazon Aurora | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula60-AmazonAurora.md)|
