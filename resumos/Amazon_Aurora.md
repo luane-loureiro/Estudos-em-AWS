@@ -10,9 +10,7 @@ O Amazon Aurora é um mecanismo de banco de dados relacional totalmente gerencia
 - O Aurora também automatiza e padroniza o agrupamento em clusters e a replicação de bancos de dados, que normalmente são os aspectos mais difíceis da configuração e administração do banco de dados.
 
 ### Principais Recursos do Amazon Aurora
-
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/4d5cf517-aff6-4275-9861-6476bb9524ff)
-
 ## Instâncias do Amazon Aurora e cluster de banco de dados
 - Ao criar uma instância do Amazon Aurora, você cria um cluster de banco de dados (DB).
 - Um cluster de banco de dados do Aurora consiste em uma ou mais instâncias do banco de dados e um volume de cluster que gerencia os dados para essas instâncias.
