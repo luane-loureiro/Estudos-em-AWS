@@ -57,12 +57,12 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 46 | Visão geral da computação (servidores) | |
 | Aula 47 | Computação na AWS | |
 | Aula 48 | Gerenciando suas instâncias da AWS | |
-| Aula 49 | AWS Elastic Beanstalk | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AWSElasticBeanstalk.md) |
-| Aula 50 | Elastic Load Balancing| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/ElasticLoadBalancing.md) |
-| Aula 51 | Load Balancer listeners | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/LoadBalancer-listeners.md) |
-| Aula 52 | Amazon Route 53 | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/amazon-route-53.md) |
-| Aula 53 | Amazon Cloud Front | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/AmazonCloudFront.md) |
-| Aula 54 | Lambda | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Lambda.md) |
+| Aula 49 | AWS Elastic Beanstalk | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula49-AWSElasticBeanstalk.md) |
+| Aula 50 | Elastic Load Balancing| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula50-ElasticLoadBalancing.md) |
+| Aula 51 | Load Balancer listeners | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula51-LoadBalancerListeners.md) |
+| Aula 52 | Amazon Route 53 | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula52-AmazonRoute53.md) |
+| Aula 53 | Amazon Cloud Front | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula53-AmazonCloudFront.md) |
+| Aula 54 | Lambda | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula54-Lambda.md) |
 | Aula 55 | APis And Rest.md| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula55-APisAndRest.md) |
 | Aula 56 | Containers AWS| [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula56-ContainersAws.md) |
 | Aula 57 | AWS Step Functions | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula57-AwsStepFunctions.md) |
