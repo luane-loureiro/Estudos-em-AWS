@@ -1,4 +1,4 @@
-# Amazon RedShift
+# Aula 59 - Amazon RedShift
 O Amazon Redshift é um serviço de data warehouse na nuvem totalmente gerenciado, na escala de petabytes.
 
 ## Compreendendo petabytes (PB) e data warehouses
