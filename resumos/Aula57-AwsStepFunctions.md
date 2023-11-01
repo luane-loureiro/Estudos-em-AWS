@@ -1,4 +1,4 @@
-# AWS Step Functions
+# Aula 57 - AAWS Step Functions
 O AWS Step Functions permite coordenar serviços da AWS em fluxos de trabalho sem servidor.
 - Os fluxos de trabalho consistem em uma série de etapas.
 - A saída de uma etapa é a entrada para a próxima etapa.
