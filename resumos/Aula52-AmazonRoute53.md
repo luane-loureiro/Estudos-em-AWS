@@ -1,4 +1,4 @@
-# amazon route 53
+# Aula 52 - Amazon Route 53
 
 ## O Amazon Route 53 é um serviço da Web do Domain Name System (DNS) escalável
 - Registra ou transfere um nome de domínio
