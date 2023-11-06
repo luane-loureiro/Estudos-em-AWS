@@ -16,7 +16,8 @@ O armazenamento de instâncias, ou armazenamento temporário, é um armazenament
 • Semelhante ao Amazon EBS, o Amazon S3 é um armazenamento persistente. No entanto, ele pode ser acessado de qualquer lugar.
 
 
-### Quatro categorias de armazenamento na nuvem A AWS oferece quatro categorias para armazenamento na nuvem:
+### Quatro categorias de armazenamento na nuvem 
+A AWS oferece quatro categorias para armazenamento na nuvem:
 - Armazenamento em bloco
     -  O Amazon Elastic Block Store (Amazon EBS) fornece recursos de armazenamento em bloco altamente disponíveis e de baixa latência para cargas de trabalho que exigem armazenamento persistente acessível a partir de uma instância do Amazon Elastic Compute Cloud (Amazon EC2).
 
