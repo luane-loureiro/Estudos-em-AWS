@@ -59,15 +59,12 @@ As soluções abordam cenários comuns, como:
 #### Amazon S3 Glacier
 -  Um serviço de armazenamento na nuvem seguro, durável e de custo extremamente baixo para o arquivamento de dados e backup de longo prazo.
 
-
 #### Amazon EFS 
 - Um sistema de arquivos NFS simples e escalável para cargas de trabalho do Linux que usam serviços de nuvem da AWS e recursos locais
-
 
 #### AWS Storage Gateway 
 - Armazenamento híbrido que amplia seu ambiente local com o armazenamento na nuvem da AWS
 - Armazenamento híbrido para recuperação de desastres (DR), estratificação de preços ou migração
-
 
 #### Amazon FSx
 - Um serviço que fornece sistemas de arquivos para várias cargas de trabalho, como armazenamento para aplicativos do Windows, aprendizado de máquina, automação de projeto eletrônico e computação de alto desempenho
