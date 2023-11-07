@@ -104,8 +104,20 @@ Com o Amazon S3, seu aplicativo deve iniciar a criptografia no lado do servidor.
 
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/4cbc9e91-3e7f-45af-810f-af3115a965e7)
 
-# CONTINUA -->
 
+
+## Comparação entre o Amazon S3 e o Amazon S3 Glacier
+### Comparação de armazenamento 
+Embora o Amazon S3 e o Amazon S3 Glacier sejam soluções de armazenamento de objetos que permitem armazenar uma quantidade praticamente ilimitada de dados, este gráfico descreve algumas diferenças críticas.
+
+|   | Amazon S3 | Amazon S3 Glacier |
+|----|----|----|
+| Volume de dados | Sem limite | Sem limite |
+| Latência Média | ms | Minutos ou Horas |
+| Tamanho do Item | 5TB max | 40TB Max |
+| Custo Mensal | $$ | S |
+| Solicitações | PUT, COPY, POST, LIST e GET | UPLOAD e retrieval |
+| Definição de preço de recuperação | $ Por Solicitação | $$ Por solicitação e por GB |
 
 
 
