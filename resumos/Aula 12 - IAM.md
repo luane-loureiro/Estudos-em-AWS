@@ -138,4 +138,62 @@ Você pode:
 - Definir permissões usando políticas do IAM
 
 ## Funções do IAM
-(CONTINUA - > slide 20 )
+- Usadas para delegar acesso a recursos da AWS
+- Fornecem acesso temporário
+- Permissões
+        - Definidas usando políticas do IAM
+        - Anexadas à função, não a um usuário ou grupo do IAM
+
+Uma função é uma ferramenta para conceder acesso temporário aos recursos da AWS em sua conta da AWS. As permissões não são anexadas a um usuário ou grupo do IAM. Em vez disso, no tempo de execução, os aplicativos ou serviços da AWS podem assumir uma função de uma forma programática. Quando uma função é atribuída, a AWS retorna credenciais de segurança temporárias que o usuário ou aplicativo pode usar para fazer solicitações programáticas à AWS. 
+
+#### Casos de uso
+Um caso de uso para usar funções é com usuários federados. Um usuário federado não tem uma identidade permanente em uma conta da AWS da mesma forma que um usuário do IAM. Para atribuir permissões a um usuário federado, você pode criar uma entidade de função.
+
+#### Criar funções 
+Você cria uma função na conta da AWS que contém os recursos aos quais você deseja permitir acesso. Ao criar a função, especifique duas políticas:
+- A política de confiança especifica quem tem permissão para assumir a função, como o principal ou a entidade confiável.
+  
+- A política de acesso (ou permissões) define quais ações e recursos o principal tem permissão para usar. O principal pode ser:
+    - Conta da AWS
+    - Serviço da AWS (como Amazon Elastic Compute Cloud ou Amazon EC2)
+    - Provedor de Security Assertion Markup Language (SAML) 
+    - Provedor de identidade (IdP) que pode incluir Login with Amazon, Facebook ou Google.
+
+O principal também pode ser um usuário, um grupo ou uma função do IAM de outras contas da AWS, incluindo as que não são suas.
+
+
+## Permições do IAM
+#### Como o IAM Determina Permições
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/e412d713-986a-42df-b7bb-e58eb16cb3ce)
+
+Com o uso das políticas, você pode ajustar as permissões concedidas a usuários, grupos e funções do IAM. Como as políticas são armazenadas no formato JavaScript Object Notation (JSON), você pode usá-las com um sistema de controle de versão. 
+É uma prática recomendada definir o acesso de privilégio mínimo para cada usuário, grupo ou função. Assim, você pode personalizar o acesso a recursos específicos usando uma política de autorização.
+Quando você determina se as permissões são concedidas, o IAM primeiro verifica se há uma política de negação explícita. Se não houver, ele vai então conferir se há uma política de permissão explícita. 
+Caso não haja uma política de permissão nem de negação explícita, o IAM reverterá para o padrão: negação implícita.
+
+
+## Políticas do IAM
+Uma política do IAM é uma declaração formal de uma ou mais permissões. As políticas podem ser anexadas a qualquer entidade do IAM, o que inclui um usuário, um grupo, uma função ou um recurso. 
+As políticas especificam quais ações são permitidas, em quais recursos permitir as ações e qual será o efeito quando o usuário solicitar acesso aos recursos.
+A ordem em que as políticas são avaliadas não tem efeito no resultado da avaliação. Todas as políticas são avaliadas, e o resultado é sempre que a solicitação é permitida ou negada. Quando há um conflito, a política mais restritiva prevalece.
+
+#### Tipos de políticas do IAM
+- As **políticas baseadas em identidade** são políticas de permissões que você pode anexar a um principal ou uma identidade, como um usuário, uma função ou um grupo do IAM. Essas políticas controlam quais ações essa identidade pode realizar, em quais recursos e em que condições. As políticas baseadas em identidade podem ser categorizadas como:
+    - **Políticas gerenciadas:** políticas independentes baseadas em identidade que você pode anexar a vários usuários, grupos e funções em sua conta da AWS
+    - **Políticas em linha:** políticas que você cria e gerencia e que são incorporadas diretamente em um único usuário, grupo ou função
+
+- As **Políticas com base em recursos** são documentos de política JSON anexados a um recurso, como um bucket do Amazon Simple Storage Service (Amazon S3). Essas políticas controlam quais ações uma entidade principal pode realizar nesse recurso e em quais condições. As políticas baseadas em recurso são políticas em linha. Não há políticas baseadas em recurso gerenciadas. 
+
+
+#### Uma política do IAM é uma declaração formal de uma ou mais permissões.
+- Anexe uma política a qualquer entidade do IAM, como usuário, grupo ou função.
+- As políticas autorizam as ações que podem, ou não, ser executadas pela entidade.
+- Uma única política pode ser anexada a várias entidades.
+- Uma única entidade pode ter várias políticas anexadas.
+
+***Prática recomendada*** Ao anexar a mesma política a vários usuários do IAM, coloque os usuários em um grupo e anexe a política ao grupo.
+
+## IAM: Atribuição de Política:
+Você pode atribuir a mesma política a um usuário do IAM, um grupo do IAM e funções do IAM. Isso permite a reutilização e reduz a necessidade de recriar a mesma política para identidades diferentes.
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/c71cb388-ccb4-46b0-9f20-2988bcb576a0)
+
