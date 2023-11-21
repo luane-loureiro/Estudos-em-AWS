@@ -21,7 +21,7 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 10 | AWS Elastic Compute (Amazon EC2) | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2010.md)|
 | Aula 11 | AWS Security Groups | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2011-SecurityGroup.md) |
 | Aula 12 | AWS IAM |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2012%20-%20IAM.md) |
-| Aula 13 | AWS Cloudtrail | |
+| Aula 13 | AWS Cloudtrail |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2013%20-%20AWSCloudTrail.md) |
 | Aula 14 |AWS Config | |
 | Aula 15 | AWS Trusted Advisor | |
 | Aula 16 | Práticas recomendadas | |
