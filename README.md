@@ -19,8 +19,8 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 8 | Modelo de responsabilidade compartilhada da AWS | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2008.md)|
 | Aula 9 | Amazon Simple Storage Service (Amazon S3) | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2009.md)|
 | Aula 10 | AWS Elastic Compute (Amazon EC2) | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2010.md)|
-| Aula 11 | AWS Security Groups | |
-| Aula 12 | AWS IAM | |
+| Aula 11 | AWS Security Groups | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2011-SecurityGroup.md) |
+| Aula 12 | AWS IAM |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2012%20-%20IAM.md) |
 | Aula 13 | AWS Cloudtrail | |
 | Aula 14 |AWS Config | |
 | Aula 15 | AWS Trusted Advisor | |
