@@ -22,9 +22,9 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 11 | AWS Security Groups | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2011-SecurityGroup.md) |
 | Aula 12 | AWS IAM |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2012%20-%20IAM.md) |
 | Aula 13 | AWS Cloudtrail |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2013%20-%20AWSCloudTrail.md) |
-| Aula 14 |AWS Config | |
-| Aula 15 | AWS Trusted Advisor | |
-| Aula 16 | Práticas recomendadas | |
+| Aula 14 |AWS Config | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2014%20-%20AWSConfig.md) |
+| Aula 15 | AWS Trusted Advisor |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2015%20-TrustedAdvisor.md) |
+| Aula 16 | Práticas recomendadas | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2016%20-%20PraticasRecomendadas.md) |
 | Aula 17 | Conformidade de segurança da AWS | |
 | Aula 18 | Recursos de segurança da AWS | |
 | Aula 19 | Amazon CloudWatch | |
