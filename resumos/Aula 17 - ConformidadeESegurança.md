@@ -30,3 +30,77 @@ A AWS, os órgãos de certificação e os auditores independentes fornecem:
 os alinhamentos e os frameworks de conformidade incluem requisitos publicados de segurança ou conformidade com determinado propósito, como uma função ou um setor específico. A AWS disponibiliza funcionalidades, como recursos de segurança, e também oferece manuais de conformidade, documentos de mapeamento e documentos técnicos para esses tipos de programas.
 
 ## Programa de conformidade e risco da AWS
+A AWS fornece informações sobre seu programa de conformidade e riscos para permitir que os clientes incorporem os controles da AWS em sua estrutura de governança. Essas informações podem ajudar os clientes a documentar um framework completo de controle e governança com a AWS incluída como parte importante desse framework.
+O programa de conformidade e riscos da AWS é composto por três elementos:
+- Gerenciamento de riscos empresariais
+- Ambiente de controle e automação
+- Segurança da informação
+
+## Gerenciamento de riscos da AWS
+O gerenciamento da AWS desenvolve um plano estratégico empresarial, que inclui a identificação de riscos e a implementação de controles para reduzir ou gerenciar riscos. O gerenciamento da AWS reavalia o plano estratégico empresarial pelo menos semestralmente. Esse processo exige gerenciamento para identificar riscos em suas áreas de responsabilidade, bem como para implementar medidas adequadas projetadas para solucionar esses riscos.
+
+#### Plano de negócios e responsabilidades
+**Plano de negócios**
+- Inclui gerenciamento de riscos
+- Plano reavaliado pelo menos semestralmente
+  
+**Responsabilidades do cliente** 
+- Identificação de riscos
+- Implementar medidas adequadas para enfrentar os riscos
+- Avaliar os diversos riscos internos ou externos
+
+#### Políticas e framework de segurança da informação
+- Control Objectives for Information and related Technology (COBIT)
+- American Institute of Certified Public Accountants (AICPA)
+- National Institute of Standards and Technology (NIST)
+
+#### Responsabilidades da AWS  
+- Manter a política de segurança
+- Fornecer treinamento de segurança para seus funcionários
+- Executar avaliações de segurança de aplicativos
+    - Confidencialidade, integridade e disponibilidade de dados
+    - Conformidade com a política de IS
+      
+#### Segurança da AWS 
+- Verifica os endpoints de serviço em busca de vulnerabilidades
+- Notifica para correção de vulnerabilidades
+
+#### Empresas de segurança independentes 
+- As verificações não substituem as verificações do cliente.
+- Os clientes podem pedir para verificar a infraestrutura da nuvem.
+
+## Ambiente de controle da AWS
+#### Controle de acesso ao ambiente
+- Inclui políticas, processos e atividades de controle
+- Protege a entrega de ofertas de serviços da AWS
+  
+#### Componentes 
+- Pessoas
+- Processos
+- Tecnologia
+
+#### Funcionalidade 
+- Oferece suporte à eficácia operacional do framework de controle da AWS
+- Integra controles identificados por órgãos de nuvem líderes do setor
+- Monitora ideias de práticas líderes para gerenciar o ambiente de controle
+
+## Segurança da informação 
+#### Programa de segurança da informação da AWS
+- Protege
+    - Confidencialidade
+    - Integridade
+    - Disponibilidade
+- Publica documento técnico de segurança
+
+## Requisitos de conformidade do cliente
+- Manter a governança em todo o ambiente de controle de TI.
+- Compreender:
+    - Os objetivos de conformidade necessários
+    - A tolerância de risco baseada em validação
+- Estabelecer um ambiente de controle que atenda aos objetivos.
+- Verificar a eficácia do ambiente de controle.
+- Usar a abordagem básica de conformidade:
+    - Revisão
+    - Design
+    - Identificar
+    - Verificar
