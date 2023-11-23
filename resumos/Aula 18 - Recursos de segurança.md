@@ -29,3 +29,12 @@ A Rede de Parceiros da AWS (APN) é um grupo de fornecedores de software e servi
     - Denúncias de abuso
     - Vulnerabilidades
     - Teste de penetração
+ 
+## Guia de soluções de conformidade da AWS
+- Entenda o modelo de responsabilidade compartilhada
+- Solicite um relatório de conformidade
+- Preencha um questionário de segurança
+- Serviços no escopo
+- Blog de segurança da AWS
+- Estudos de caso
+- Perguntas frequentes
