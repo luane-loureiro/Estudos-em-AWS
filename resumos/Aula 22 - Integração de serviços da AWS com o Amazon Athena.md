@@ -17,4 +17,17 @@ O Athena permite que você consulte todos os seus dados no Amazon S3 sem precisa
 Além disso, o Athena oferece desempenho de consulta rápido e interativo. 
 O Athena executa automaticamente as consultas em paralelo, de forma que a maioria dos resultados retorna em segundos.
 
+## Conceitos básicos do Amazon Athena 
+1. Crie um bucket do Amazon Simple Storage Service (Amazon S3) e carregue dados nele – Como alternativa, mantenha um bucket existente que já contenha dados
+Dados
+2. Defina o esquema (definição de tabela) que descreve a estrutura de dados
+3. Comece a consultar dados usando a linguagem de consulta estruturada (SQL)
+
+## Integrações do serviço da AWS com o Amazon Athena 
+### O Amazon Athena trabalha com outros serviços da AWS
+O Athena facilita a consulta de logs de serviços, como: 
+- AWS CloudTrail
+- Os logs do Application Load Balancer
+- Logs de fluxo da Amazon Virtual Private Cloud (Amazon VPC)
+
 
