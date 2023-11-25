@@ -150,7 +150,7 @@ ajuda você a **gerenciar e controlar** seu ambiente de maneira centralizada à 
 é um serviço que pode ser utilizado para fazer **controle de acesso em aplicações web e mobile**, ofertando diversas funcionalidades para esse fim.
 
 #### - AWS IAM 
-é o serviço de **Identidade** utilizado para gerenciar acesso de usuário e serviços e a AWS KMS é o serviço utilizado para criar chaves de criptografia para uso em diversos serviços da AWS, geralmente para dados, arquivos no S3.
+é o serviço de **Identidade** utilizado para gerenciar acesso de usuário e serviços.
 
 #### - IAM Policy 
 são as políticas relacionadas a cada serviços e que podem ser adicionadas a pessoas ou roles, com uma série de **permissões ou restrições**.
@@ -202,6 +202,8 @@ O Config monitora e grava continuamente registros das configurações de recurso
 #### - O Amazon Macie 
 é um serviço de **segurança e privacidade de dados** totalmente gerenciado que usa machine learning e correspondência de padrões para descobrir e proteger seus dados confidenciais na AWS. À medida que as organizações gerenciam volumes crescentes de dados, identificar e proteger seus dados confidenciais em escala pode se tornar cada vez mais complexo, caro e demorado. O Amazon Macie automatiza a descoberta de dados confidenciais em escala e reduz o custo da proteção de seus dados.
 
+#### - AWS KMS 
+é o serviço utilizado para criar chaves de criptografia para uso em diversos serviços da AWS, geralmente para dados, arquivos no S3.
 
 
 
