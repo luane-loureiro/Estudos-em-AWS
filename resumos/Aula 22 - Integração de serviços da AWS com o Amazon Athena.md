@@ -5,7 +5,7 @@ Características do Amazon Athena:
 - Sem servidor — Evita a necessidade de extrair, transformar e carregar (ETL)
 - Paga apenas pelas consultas que executa • O Athena executa automaticamente as consultas em paralelo, de forma que a maioria dos resultados retorna em segundos.
 
-ara usar o Amazon Athena, aponte para seus dados no Amazon Simple Storage Service (Amazon S3), defina o esquema e comece a consultar usando o SQL padrão. 
+Para usar o Amazon Athena, aponte para seus dados no Amazon Simple Storage Service (Amazon S3), defina o esquema e comece a consultar usando o SQL padrão. 
 A maioria dos resultados é entregue em segundos. Com o Athena, você não precisa de trabalhos ETL complexos para preparar seus dados para análise. 
 Isso faz com que qualquer pessoa com habilidades de SQL analise conjuntos de dados em grande escala com facilidade e rapidez.
 O Athena trabalha com vários formatos de dados padrão, incluindo valores separados por vírgula (CSV), JavaScript Object Notation (JSON), Optimized Row Columnar (ORC), Apache Avro e Apache Parquet. 
