@@ -1,3 +1,6 @@
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/399de41b-b9f8-4f48-aa13-31d369a3c67f)
+
+
 # Escola Da Nuvem - AWS
 Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da Nuvem
 
