@@ -48,7 +48,24 @@
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/3a0e5610-3952-40d3-b8c7-ec818732b184)
 
 
+## Amazon S3 - armazenamento de objetos
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/1eeee80d-5ce4-4919-8f30-f10aec5575ba)
 
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/d0ad104d-52c2-49c8-b0a1-b8333d01ee99)
+
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/ec037518-499c-44e1-a233-2f70bc9422da)
+
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/34666a64-4503-46eb-8f0d-be7759a640a1)
+
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/b60409d6-a0b4-4a75-8f2f-591fed986421)
+
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/15412bcc-e853-4f87-8bdf-58f4bb908f89)
+
+
+## Classes de armazenamento S3
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/b185b317-a77e-4c2f-8afb-60de69fe9dfa)
+
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/22af5c6a-0819-4864-a8af-980a3356f3ee)
 
 
 
