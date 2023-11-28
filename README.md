@@ -205,6 +205,9 @@ O Config monitora e grava continuamente registros das configurações de recurso
 #### - AWS KMS 
 é o serviço utilizado para criar chaves de criptografia para uso em diversos serviços da AWS, geralmente para dados, arquivos no S3.
 
+#### - Amazon EBS (Amazon Elastic Block Store)
+É um serviço que fornece **volumes de armazenamento a nível de bloco** que você pode usar com instâncias do Amazon EC2. Se você interromper ou terminar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis.
+
 
 
 ## 🌐 Outros Links 
