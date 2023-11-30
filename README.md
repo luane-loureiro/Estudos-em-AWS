@@ -177,6 +177,15 @@ oferece um serviço de busca e localização para ser implementado no seu websit
 #### - O EMR
 é a **plataforma de BigData** da AWS.
 
+#### - O Amazon Neptune 
+é um serviço de banco de dados de grafo. O Amazon Neptune fornece a capacidade de criar e executar aplicações que funcionam com conjuntos de dados altamente conectados, como mecanismos de recomendação, detecção de fraude e grafos de conhecimento.
+
+#### - O Amazon CloudFront 
+é um serviço de entrega de conteúdo.
+
+####- O AWS DeepRacer 
+é um carro de corrida autônomo de escala 1/18 que testa modelos de aprendizado por reforço
+
 #### - O CloudWatch 
 permite oferece a geração de **métricas e monitoramento** para diversos serviços e aplicações da AWS.
 
@@ -197,6 +206,13 @@ permite o **armazenamento em memória temporária** para ser utilizados por apli
 
 #### - O AWS Budgets
 é o serviço utilizado para **definir orçamentos** desejáveis para a uso e incluir alertas para notificação de alertas sobre uso acima do esperado.
+permite que as empresas definam alertas personalizados que notificarão os indivíduos quando o uso de um serviço exceder (ou estiver previsto que exceda) o valor orçado.
+
+#### - A Calculadora de Preços da AWS 
+cria uma estimativa para o custo dos casos de uso de uma empresa na AWS. Na Calculadora de Preços AWS, uma pessoa pode inserir detalhes para os requisitos de computação em nuvem e, em seguida, receber uma estimativa detalhada que pode ser exportada e compartilhada. 
+
+#### - O AWS Artifact 
+é um serviço que concede acesso a relatórios de segurança e conformidade da AWS e contratos on-line especiais.
 
 #### - AWS Config 
 você pode usar para **gravar, gerenciar e monitorar as configurações** dos seus serviços, permite acessar, auditar e avaliar as configurações dos recursos da AWS. 
@@ -210,6 +226,31 @@ O Config monitora e grava continuamente registros das configurações de recurso
 
 #### - Amazon EBS (Amazon Elastic Block Store)
 É um serviço que fornece **volumes de armazenamento a nível de bloco** que você pode usar com instâncias do Amazon EC2. Se você interromper ou terminar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis.
+
+#### - O Amazon Redshift 
+é um serviço de armazenamento de dados que realiza análise de Big Data. Ele oferece a capacidade de coletar dados de muitas origens e apresenta informações sobre relações e tendências no conjunto de dados. 
+
+#### - O Amazon Quantum Ledger Database (Amazon QLDB) 
+é um serviço de banco de dados ledger. Uma pessoa pode usar o Amazon QLDB para ver um histórico completo de todas as alterações feitas nos dados da aplicação.
+
+#### - O AWS Snowball 
+é um dispositivo para transferência de grandes quantidades de dados para dentro e para fora da AWS.
+
+#### - O Amazon Inspector 
+é um serviço que verifica vulnerabilidades de segurança e desvios das práticas recomendadas de segurança das aplicações.
+
+#### - O Amazon ElastiCache 
+é um serviço que adiciona camadas de cache em cima de bancos de dados para melhorar os tempos de leitura de solicitações comuns.
+
+#### - Com o Amazon SageMaker
+é rápido e fácil começar a trabalhar em projetos de machine learning. Você não precisa seguir o processo tradicional de reunir manualmente ferramentas e fluxos de trabalho separados.
+
+#### - O Amazon Textract 
+é um serviço de machine learning que extrai automaticamente texto e dados de documentos digitalizados.
+
+#### - O Amazon Lex
+é um serviço para criação de interfaces de conversação usando voz e texto.
+
 
 
 
