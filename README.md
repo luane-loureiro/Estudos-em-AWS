@@ -28,12 +28,12 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 14 |AWS Config | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2014%20-%20AWSConfig.md) |
 | Aula 15 | AWS Trusted Advisor |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2015%20-TrustedAdvisor.md) |
 | Aula 16 | Práticas recomendadas | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2016%20-%20PraticasRecomendadas.md) |
-| Aula 17 | Conformidade de segurança da AWS | |
-| Aula 18 | Recursos de segurança da AWS | |
-| Aula 19 | Amazon CloudWatch | |
-| Aula 20 | Mergulhe fundo: Amazon CloudWatch | |
-| Aula 21 | AWS Cloudtrail | |
-| Aula 22 | Integração de serviços da AWS com o Athena | |
+| Aula 17 | Conformidade de segurança da AWS | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2017%20-%20ConformidadeESeguran%C3%A7a.md)|
+| Aula 18 | Recursos de segurança da AWS |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2018%20-%20Recursos%20de%20seguran%C3%A7a.md) |
+| Aula 19 | Amazon CloudWatch |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2019%20-%20Amazon%20CloudWatch.md)|
+| Aula 20 | Mergulhe fundo: Amazon CloudWatch |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2020%20-%20Amazon%20CloudWatch%20-%20Logs%20e%20eventos.md) |
+| Aula 21 | AWS Cloudtrail |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2021%20-%20AWS%20CloudTrail.md) |
+| Aula 22 | Integração de serviços da AWS com o Athena |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2022%20-%20Integra%C3%A7%C3%A3o%20de%20servi%C3%A7os%20da%20AWS%20com%20o%20Amazon%20Athena.md) |
 | Aula 23 | AWS Organizations | |
 | Aula 24 | Marcação | |
 | Aula 25 | Gerenciamento de custos e melhores práticas da AWS | |
