@@ -7,3 +7,5 @@
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/e1a1eec1-5577-4a37-8e9c-35c220eb567e)
 
 [AWS Well-Architected](https://aws.amazon.com/pt/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc&wa-guidance-whitepapers.sort-by=item.additionalFields.sortDate&wa-guidance-whitepapers.sort-order=desc)
+
+[seis vantagens da nuvem](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html)
