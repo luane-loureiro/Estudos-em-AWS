@@ -11,3 +11,4 @@
 [seis vantagens da nuvem](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html)
 
 [comparação de planos de suporte](https://aws.amazon.com/pt/premiumsupport/plans/)
+[Conformidade da AWS](https://aws.amazon.com/pt/compliance/)
