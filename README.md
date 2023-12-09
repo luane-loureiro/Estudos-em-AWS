@@ -34,8 +34,8 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 20 | Mergulhe fundo: Amazon CloudWatch |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2020%20-%20Amazon%20CloudWatch%20-%20Logs%20e%20eventos.md) |
 | Aula 21 | AWS Cloudtrail |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2021%20-%20AWS%20CloudTrail.md) |
 | Aula 22 | Integração de serviços da AWS com o Athena |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2022%20-%20Integra%C3%A7%C3%A3o%20de%20servi%C3%A7os%20da%20AWS%20com%20o%20Amazon%20Athena.md) |
-| Aula 23 | AWS Organizations | |
-| Aula 24 | Marcação | |
+| Aula 23 | AWS Organizations | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2023%20-%20Introdu%C3%A7%C3%A3oAoAWSOrganizations.md)|
+| Aula 24 | Marcação (Tags) | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2024%20-%20Marca%C3%A7%C3%A3o(tag).md) |
 | Aula 25 | Gerenciamento de custos e melhores práticas da AWS | |
 | Aula 26 | Estratégia de construção da AMI | |
 | Aula 27 | Modelos de lançamento do Amazon EC2 | |
