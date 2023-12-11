@@ -86,6 +86,9 @@ fornece uma **interface da web simples** para a Amazon Web Services.
 é um serviço Web que disponibiliza **capacidade computacional** segura e redimensionável na nuvem. Ele foi projetado para facilitar a computação em nuvem na escala da web para os desenvolvedores.
 fornece instâncias de servidores com diversas configurações e opções de processamento, memória e rede.
 
+#### - Scaling vertical 
+é um **update da instancia** EC2, é um melhoramento da capacidade de memoria ou processamento, é como um updade normal da sua maquina fisica.
+
 #### - O AWS Key Management Service (KMS) 
 facilita a criação e o gerenciamento de **chaves criptográficas** e o controle do seu uso em uma ampla variedade de serviços da AWS e em seus aplicativos.
 
