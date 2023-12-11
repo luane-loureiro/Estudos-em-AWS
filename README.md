@@ -183,7 +183,7 @@ oferece um serviço de busca e localização para ser implementado no seu websit
 #### - O Amazon CloudFront 
 é um serviço de entrega de conteúdo.
 
-####- O AWS DeepRacer 
+#### - O AWS DeepRacer 
 é um carro de corrida autônomo de escala 1/18 que testa modelos de aprendizado por reforço
 
 #### - O CloudWatch 
@@ -251,8 +251,11 @@ O Config monitora e grava continuamente registros das configurações de recurso
 #### - O Amazon Lex
 é um serviço para criação de interfaces de conversação usando voz e texto.
 
+#### - ACL - Acess Control List 
+ë um documento que difine quem pode acessar um bucket ou objeto especificico. Cada bucket ou objeto no Amazon S3 possui uma ACL.  Este documento define o que cada tipo de usuário pode fazer, como permições de gravação e leitura.
 
-
+#### - ACM - AWS Certificate Menager
+É um seviço web para provisionamento, gerenciamento e implementação de certificados secure sockets layer/ transport layer security (ssl/TLS) para uso com serviços da aws.
 
 ## 🌐 Outros Links 
 - [Escola da Nuvem](https://escoladanuvem.org/)
