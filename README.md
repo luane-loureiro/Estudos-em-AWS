@@ -85,15 +85,20 @@ fornece instâncias de servidores com diversas configurações e opções de pro
 é utilzado para implementar funções **sem servidores**.
 
 **AWS Elastic Beanstalk** - 
-
+ é um serviço para implementar e escalar aplicações e serviços da Web. Envie seu código e o Elastic Beanstalk gerencia automaticamente a implantação, desde o provisionamento de capacidade, balanceamento de carga e escalabilidade automática até o monitoramento da integridade de aplicações.
+ 
 **Amazon EC2 Auto Scaling** - 
+Ajuda a manter a disponibilidade dos aplicativos e permite adicionar ou remover automaticamente instâncias do EC2 usando políticas de escalabilidade definidas por você. As políticas de **escalabilidade dinâmica** ou preditiva permitem adicionar ou remover capacidade de instância do EC2 para atender padrões de demanda estabelecidos ou em tempo real. Os recursos de gerenciamento de frota do Amazon EC2 Auto Scaling ajudam a manter a integridade e a disponibilidade da sua frota.
 
 **Amazon ECS - Amazon Elastic Container Service** - 
+é um recurso do Amazon ECS que permite executar e gerenciar **workloads de contêiner** em sua infraestrutura. Este recurso ajuda você a atender aos requisitos de conformidade e expandir seus negócios sem sacrificar seus investimentos on-premises.
 
 **Amazon EKS - Amazon Elastic Kubernetes Service** - 
-
+ é um serviço gerenciado do Kubernetes para executar o Kubernetes na nuvem da AWS e em datacenters on-premises. Na nuvem, o Amazon EKS gerencia automaticamente a disponibilidade e a escalabilidade dos nós do ambiente de gerenciamento do Kubernetes, que são responsáveis por programar contêineres, gerenciar a disponibilidade das aplicações, armazenar dados de cluster e outras tarefas principais.
+ 
 **Amazon ECR - Amazon Elastic Container Registry** - 
-
+ é um **registro de contêiner** totalmente gerenciado que oferece hospedagem de alta performance para que você possa implantar imagens e artefatos de aplicações de forma confiável em qualquer lugar.
+ 
 **AWS Fargate** - 
 É um mecanismo de **computação sem servidor para contêineres** que funciona tanto com o Amazon Elastic Container Service (ECS) quanto com o Amazon Elastic Kubernetes (EKS).
 
@@ -101,6 +106,12 @@ fornece instâncias de servidores com diversas configurações e opções de pro
 ## Serviços de segurança, identidade e conformidade:
 **IAM - AWS Identity and Access Management** - 
 é o serviço de **Identidade** utilizado para gerenciar acesso de usuário e serviços.
+
+**IAM Policy** - 
+são as políticas relacionadas a cada serviços e que podem ser adicionadas a pessoas ou roles, com uma série de **permissões ou restrições**.
+
+**ACL - Acess Control List**
+ë um documento que difine quem pode acessar um bucket ou objeto especificico. Cada bucket ou objeto no Amazon S3 possui uma ACL.  Este documento define o que cada tipo de usuário pode fazer, como permições de gravação e leitura.
 
 **Amazon Cognito** - 
 é um serviço que pode ser utilizado para fazer **controle de acesso em aplicações web e mobile**, ofertando diversas funcionalidades para esse fim.
@@ -115,13 +126,33 @@ Ele fornece detecção sempre ativa e mitigações em linha automáticas que min
 **AWS KMS - AWS Key Management Service** - 
 é o serviço facilita a criação e o gerenciamento de **chaves criptográficas** e o controle do seu uso em uma ampla variedade de serviços da AWS e em seus aplicativos, geralmente para dados, arquivos no S3.
 
+**Amazon Macie** - 
+é um serviço de **segurança e privacidade de dados** totalmente gerenciado que usa machine learning e correspondência de padrões para descobrir e proteger seus dados confidenciais na AWS. À medida que as organizações gerenciam volumes crescentes de dados, identificar e proteger seus dados confidenciais em escala pode se tornar cada vez mais complexo, caro e demorado. O Amazon Macie automatiza a descoberta de dados confidenciais em escala e reduz o custo da proteção de seus dados.
+
+**Amazon Inspector** - 
+é um serviço que verifica vulnerabilidades de segurança e desvios das práticas recomendadas de segurança das aplicações.
+
+**Amazon GuardDuty**
+é um serviço de detecção de ameaças que monitora continuamente suas contas e workloads da AWS para detectar atividades mal-intencionadas e entrega descobertas de segurança detalhadas, permitindo visibilidade e correção.
+
+**AWS Certificate Manager**
+Provisione e gerencie certificados SSL/TLS com serviços da AWS e recursos conectados
+
+**AWS Firewall Manager**
+Configure e gerencie de forma centralizada regras de firewall em todas as suas contas
+
+**O AWS WAF**
+é um **firewall de aplicações Web** que ajuda a proteger suas aplicações Web ou APIs contra bots e exploits comuns na Web que podem afetar a disponibilidade, comprometer a segurança ou consumir recursos em excesso.
 
 ## Serviços de armazenamento
 **Amazon S3 - Amazon Simple Storage Service** - 
-
+ é um serviço de **armazenamento de objetos** que oferece escalabilidade, disponibilidade de dados, segurança e performance líderes do setor. Clientes de todos os portes e setores podem armazenar e proteger qualquer quantidade de dados de praticamente qualquer caso de uso, como data lakes, aplicações nativas da nuvem e aplicações móveis. Com classes de armazenamento econômicas e recursos de gerenciamento fáceis de usar, você pode otimizar custos, organizar dados e configurar controles de acesso ajustados para atender a requisitos específicos de negócios, organizacionais e de conformidade.
+ 
 **Amazon S3 Glacier** - 
+ão desenvolvidas especificamente para arquivamento de dados com a finalidade de oferecer a você a mais alta performance, a maior flexibilidade de recuperação e o armazenamento de **arquivos de menor custo na nuvem**. Todas as classes de armazenamento S3 Glacier fornecem escalabilidade virtualmente ilimitada e são projetadas para 99,999999999% (11 noves) de durabilidade de dados. As classes de armazenamento S3 Glacier oferecem opções para o acesso mais rápido aos seus dados de arquivo e o armazenamento de arquivo de menor custo na nuvem.
 
 **Amazon EFS - Amazon Elastic File System** - 
+aumenta e diminui automaticamente conforme você adiciona e remove arquivos, sem a necessidade de gerenciamento ou provisionamento.
 
 **Amazon EBS - Amazon Block Store** - 
 É um serviço que fornece **volumes de armazenamento a nível de bloco** que você pode usar com instâncias do Amazon EC2. Se você interromper ou terminar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis.
@@ -129,6 +160,7 @@ Ele fornece detecção sempre ativa e mitigações em linha automáticas que min
 
 ## Serviços de banco de dados:
 **Amazon RDS - Amazon Relational Database Service** - 
+é uma coleção de **serviços gerenciados** que facilita a configuração, a operação e a escalabilidade de **bancos de dados** na nuvem. Escolha entre oito mecanismos populares: Amazon Aurora PostgreSQL Compatible Edition, Amazon Aurora MySQL Compatible Edition , RDS for PostgreSQL , RDS for MySQL, RDS for MariaDB, RDS for SQL Server, RDS for Oracle e RDS for Db2. Implante localmente com o Amazon RDS no AWS Outposts ou com acesso elevado ao sistema operacional subjacente e ao ambiente de banco de dados usando o Amazon RDS Custom.
 
 **Amazon DynamoDB** - 
 é o **banco de dados totalmente gerenciado pela AWS**, NoSQL de chave/valor;
@@ -146,10 +178,19 @@ O Amazon Aurora é até **cinco vezes mais rápido** que bancos de dados MySQL p
 **O Amazon Quantum Ledger Database (Amazon QLDB)** - 
 é um serviço de **banco de dados ledger**. Uma pessoa pode usar o Amazon QLDB para ver um histórico completo de todas as alterações feitas nos dados da aplicação.
 
+**Amazon ElastiCache**
+é um serviço totalmente gerenciado, compatível com Redis e Memcache, que oferece desempenho econômico e em tempo real para aplicações modernas. O ElastiCache pode ser escalado para centenas de milhões de operações por segundo com tempo de resposta de microssegundos e oferece segurança e confiabilidade de nível corporativo.
+
+**O Amazon ElastiCache**
+é um serviço que adiciona camadas de cache em cima de bancos de dados para **melhorar os tempos de leitura** de solicitações comuns.
+
 
 ## Serviços de rede e de entrega de conteúdo:
 **Amazon VPC - Amazon Virtual Private Cloud** - 
 Virtual Private Cloud permite que você crie uma **rede privada isolada** para alocar diversos recursos.
+
+**AWS VPN** - 
+estabelecem conexões seguras entre redes locais, escritórios remotos, dispositivos de clientes e a rede global da AWS. 
 
 **Amazon Route 53 (dominios)** - 
 é um **web service DNS** na nuvem altamente disponível e escalável. Ele foi projetado para oferecer aos desenvolvedores e empresas uma maneira altamente confiável e econômica de direcionar os usuários finais aos aplicativos de Internet, convertendo nomes como www.example.com para endereços IP numéricos como 192.0.2.1, usados pelos computadores para se conectarem entre si. O Amazon Route 53 também é totalmente compatível com o IPv6.
@@ -158,10 +199,22 @@ Virtual Private Cloud permite que você crie uma **rede privada isolada** para a
 é um serviço de entrega de conteúdo.
 
 **Elastic Load Balancing (ELB)** - 
+**distribui automaticamente o tráfego de aplicações** de entrada entre vários destinos e dispositivos virtuais em uma ou mais Zonas de disponibilidade (AZs).
+
 **distribui automaticamente o tráfego (carga)** de entrada de aplicações entre diversos destinos, como instâncias do Amazon EC2, contêineres, endereços IP, funções do Lambda e dispositivos virtuais. 
 O serviço pode lidar com a carga variável de tráfego das aplicações em uma única zona de disponibilidade ou em diversas zonas de disponibilidade
+ele distribui automaticamente o tráfego de aplicações de entrada entre vários destinos e dispositivos virtuais em uma ou mais Zonas de disponibilidade (AZs).
 
-## erviços de gerenciamento e governança:
+**Amazon API gateway** - 
+um serviço gerenciado que permite que desenvolvedores criem, publiquem, mantenham, monitorem e protejam APIs em qualquer escala com facilidade. APIs agem como a “porta de entrada” para aplicativos acessarem dados, lógica de negócios ou funcionalidade de seus serviços de back-end. Usando o API Gateway, você pode criar APIs do RESTful e APIs do WebSocket que habilitam aplicativos de comunicação bidirecionais em tempo real. O API Gateway dá suporte a cargas de trabalho conteinerizadas e sem servidor, além de aplicativos da web.
+
+**AWS Direct Connect** - 
+é um serviço de nuvem que **vincula sua rede diretamente à AWS** para oferecer performance consistente e de baixa latência.
+é o caminho mais curto para seus recursos na AWS. Seu tráfego de rede permanece todo o tempo na rede global da AWS e nunca entra na Internet pública. Isso reduz as probabilidades de gargalos ou aumentos inesperados de latência. Ao criar uma nova conexão, você pode escolher uma conexão hospedada fornecida por um parceiro de entrega do AWS Direct Connect ou uma conexão dedicada da AWS e implantá-la em mais de 100 locais do AWS Direct Connect ao redor do mundo. Com o AWS Direct Connect SiteLink, você pode enviar dados entre locais do AWS Direct Connect para **criar conexões privadas** de rede entre os escritórios e datacenters na sua rede global.
+
+
+
+## Serviços de gerenciamento e governança:
 **Amazon CloudWatch** - 
 permite oferece a geração de **métricas e monitoramento** para diversos serviços e aplicações da AWS.
 
@@ -169,19 +222,29 @@ permite oferece a geração de **métricas e monitoramento** para diversos servi
 é uma ferramenta on-line que analisa o ambiente da AWS e faz **recomendações** em tempo real que ajudam você a seguir as práticas recomendadas da AWS. O Trusted Advisor avalia a sua conta através de verificações.
 
 **AWS CloudTrail** - 
+O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrutura da AWS, oferecendo controle sobre o armazenamento, análise e ações de remediação.
 
 **AWS Well-Architected Tool** - 
+foi projetada para ajudar você a analisar o estado de suas aplicações e workloads em relação às práticas recomendadas de arquitetura, identificar oportunidades de melhoria e acompanhar o progresso ao longo do tempo.
 
 **AWS Auto Scaling** - 
 
-**AWS Command Line Interface** - 
+**AWS Command Line Interface (CLI)** - 
+É uma interface por **linha de comando** que você pode instalar pra fazer uso no seu desktop.  Ela é uma ferramenta unificada para o gerenciamento de seus produtos da AWS. Com apenas uma ferramenta para baixar e configurar, você poderá controlar vários produtos da AWS pela linha de comando e automatizá-los usando scripts.
 
 **AWS Config** - 
+avalia, audita e avalia continuamente as configurações e os relacionamentos de seus recursos na AWS, no local e em outras nuvens.
 
 **Console de gerenciamento da AWS** - 
+Tudo o que você precisa para acessar e gerenciar a Nuvem AWS, em uma única interface web
 
 **AWS Organization** - 
 ajuda você a **gerenciar e controlar** seu ambiente de maneira centralizada à medida que os negócios e seus recursos da AWS expandem. Usando o AWS Organizations, você pode criar novas contas da AWS e alocar recursos, agrupar contas para organizar seus fluxos de trabalho, aplicar políticas a contas ou grupos para governança e simplificar o faturamento usando um **único método de pagamento** para todas as suas contas.
+
+**AWS CloudFormaion** - 
+oferece uma forma fácil de **modelar uma coleção de recursos** relacionados da AWS e de terceiros, provisioná-la com rapidez e consistência e gerenciar todo o seu ciclo de vida mediante o tratamento da **infraestrutura como código**
+
+
 
 ## Serviços de gerenciamento de custos da AWS:
 **AWS Cost and Usage Report** - 
@@ -195,30 +258,41 @@ permite que as empresas definam alertas personalizados que notificarão os indiv
 tem uma interface fácil de usar que permite **visualizar, entender e gerenciar os custos** e o uso da AWS ao longo do tempo. Relacionado ao que já foi gasto, não pra estimar.
 
 
-## Outros serviços
-#### - AWS Direct Connect 
-é um serviço de nuvem que **vincula sua rede diretamente à AWS** para oferecer performance consistente e de baixa latência.
 
+## Ferramentas de Desenvolvedor
+**SDK - Kits de desenvolvimento de software da AWS** - 
+Um kit de desenvolvimento de software (SDK) é um conjunto de **ferramentas de criação** específicas da plataforma para desenvolvedores. Você precisa de componentes como depuradores, compiladores e bibliotecas para criar código que seja executado em uma plataforma, sistema operacional ou linguagem de programação específica.
+
+**AWS CodeCommit**
+Hospede com segurança repositórios Git privados altamente escaláveis e colabore no código.
+
+**A AWS Command Line Interface (AWS CLI)**
+é uma ferramenta unificada para o gerenciamento de seus produtos da AWS. Com apenas uma ferramenta para baixar e configurar, você poderá controlar vários produtos da AWS pela linha de comando e automatizá-los usando scripts.
+
+
+
+### Migração
+**AWS DataSync**
+Descubra e migre seus dados para a AWS com segurança de ponta a ponta, incluindo criptografia de dados e validação da integridade de dados.
+
+**AWS Database Migration Service(DMS)**
+serviço utilizado para realizar a **migração de banco de dados** na AWS., ele ajuda você a migrar bancos de dados para a AWS de modo rápido e seguro.
+é um serviço de replicação e migração gerenciado que ajuda a mover workloads analíticos e bancos de dados para a AWS rapidamente, de forma segura e com o mínimo possível de inatividade e zero perda de dados. O AWS DMS oferece suporte à migração entre mais de 20 mecanismos de banco de dados e análises, como do Oracle para o Amazon Aurora compatível com MySQL, do MySQL para o Amazon Relational Database (RDS) para MySQL, do Microsoft SQL Server para o Amazon Aurora compatível com PostgreSQL, do MongoDB para o Amazon DocumentDB (compatível com MongoDB), do Oracle para o Amazon Redshift e Amazon Simple Storage Service (S3).
+
+**AWS Snow**
+é um dispositivo para transferência de grandes quantidades de dados para dentro e para fora da AWS.
+
+
+
+## Outros serviços
 #### - AWS Management Console 
 fornece uma **interface da web simples** para a Amazon Web Services.
 
 #### - Scaling vertical 
 é um **update da instancia** EC2, é um melhoramento da capacidade de memoria ou processamento, é como um updade normal da sua maquina fisica.
 
-#### - AWS CLI ( Command Line Interface )
-É uma interface por **linha de comando** que você pode instalar pra fazer uso no seu desktop.  Ela é uma ferramenta unificada para o gerenciamento de seus produtos da AWS. Com apenas uma ferramenta para baixar e configurar, você poderá controlar vários produtos da AWS pela linha de comando e automatizá-los usando scripts.
-
-#### - SDK - Kits de desenvolvimento de software da AWS
-Um kit de desenvolvimento de software (SDK) é um conjunto de **ferramentas de criação** específicas da plataforma para desenvolvedores. Você precisa de componentes como depuradores, compiladores e bibliotecas para criar código que seja executado em uma plataforma, sistema operacional ou linguagem de programação específica.
-
 #### - O Amazon Chime 
 é um **serviço de comunicação** que permite realizar reuniões, conversar e realizar chamadas de negócios dentro e fora da sua organização, usando um só aplicativo.
-
-#### - O AWS CloudFormation 
-oferece uma forma fácil de **modelar uma coleção de recursos** relacionados da AWS e de terceiros, provisioná-la com rapidez e consistência e gerenciar todo o seu ciclo de vida mediante o tratamento da **infraestrutura como código**
-
-#### - O AWS WAF 
-é um **firewall de aplicações Web** que ajuda a proteger suas aplicações Web ou APIs contra bots e exploits comuns na Web que podem afetar a disponibilidade, comprometer a segurança ou consumir recursos em excesso.
 
 #### - O AWS Eventi Bridge ("ponte de eventos")
 é um barramento de **eventos** sem servidor que torna mais fácil a criação de aplicações orientadas por eventos em escala usando eventos gerados com base em suas aplicações, aplicações integradas de software como serviço (SaaS) e serviços da AWS
@@ -229,17 +303,8 @@ oferece uma forma fácil de **modelar uma coleção de recursos** relacionados d
 #### - O Amazon SQS (Simple Queue Service)
 é utilizado para **enfileirar mensagens** e desacoplar o serviços dos sistemas
 
-#### - IAM Policy 
-são as políticas relacionadas a cada serviços e que podem ser adicionadas a pessoas ou roles, com uma série de **permissões ou restrições**.
-
 #### - AWS Dedicated Hosts 
 são **máquinas físicas dedicadas** para sua operação e que podem ter alguns benefícios da Cloud, porém não máquinas compartilhadas.
-
-#### - o AWS DataSync 
-é utilizado para realizar a **sincronização** automática entre dados da infraestrutura on **premise e da AWS**. 
-
-#### - o DMS (Database Migration Service) 
-serviço utilizado para realizar a **migração de banco de dados** na AWS., ele ajuda você a migrar bancos de dados para a AWS de modo rápido e seguro.
 
 #### - O CloudSearch
 é um serviço que permite a implementação de um **serviço de busca** dentro de uma aplicação.
@@ -266,18 +331,6 @@ oferece um serviço de busca e localização para ser implementado no seu websit
 #### - A Calculadora de Preços da AWS 
 cria uma estimativa para o custo dos casos de uso de uma empresa na AWS. Na Calculadora de Preços AWS, uma pessoa pode inserir detalhes para os requisitos de computação em nuvem e, em seguida, receber uma estimativa detalhada que pode ser exportada e compartilhada.
 
-#### - O Amazon Macie 
-é um serviço de **segurança e privacidade de dados** totalmente gerenciado que usa machine learning e correspondência de padrões para descobrir e proteger seus dados confidenciais na AWS. À medida que as organizações gerenciam volumes crescentes de dados, identificar e proteger seus dados confidenciais em escala pode se tornar cada vez mais complexo, caro e demorado. O Amazon Macie automatiza a descoberta de dados confidenciais em escala e reduz o custo da proteção de seus dados.
-
-#### - O AWS Snowball 
-é um dispositivo para transferência de grandes quantidades de dados para dentro e para fora da AWS.
-
-#### - O Amazon Inspector 
-é um serviço que verifica vulnerabilidades de segurança e desvios das práticas recomendadas de segurança das aplicações.
-
-#### - O Amazon ElastiCache 
-é um serviço que adiciona camadas de cache em cima de bancos de dados para melhorar os tempos de leitura de solicitações comuns.
-
 #### - Com o Amazon SageMaker
 é rápido e fácil começar a trabalhar em projetos de machine learning. Você não precisa seguir o processo tradicional de reunir manualmente ferramentas e fluxos de trabalho separados.
 
@@ -287,11 +340,7 @@ cria uma estimativa para o custo dos casos de uso de uma empresa na AWS. Na Calc
 #### - O Amazon Lex
 é um serviço para criação de interfaces de conversação usando voz e texto.
 
-#### - ACL - Acess Control List 
-ë um documento que difine quem pode acessar um bucket ou objeto especificico. Cada bucket ou objeto no Amazon S3 possui uma ACL.  Este documento define o que cada tipo de usuário pode fazer, como permições de gravação e leitura.
 
-#### - ACM - AWS Certificate Menager
-É um seviço web para provisionamento, gerenciamento e implementação de certificados secure sockets layer/ transport layer security (ssl/TLS) para uso com serviços da aws.
 
 ## 🌐 Outros Links 
 - [Escola da Nuvem](https://escoladanuvem.org/)
