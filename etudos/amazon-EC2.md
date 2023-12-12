@@ -101,3 +101,48 @@ Isso significa que, em qualquer momento, precisa haver pelo menos uma instância
 
 Como o Amazon EC2 Auto Scaling usa instâncias do Amazon EC2, você vai pagar apenas pelas instâncias que usar, e somente quando elas forem usadas. Você agora tem uma arquitetura econômica que proporciona a melhor experiência do cliente e ao mesmo tempo reduz custos.
 
+
+## Elastic Load Balancing - Direcionamento de tráfego
+O Elastic Load Balancing é o serviço da AWS que distribui automaticamente o tráfego de entrada de aplicações entre vários recursos, como instâncias do Amazon EC2. 
+
+Um balanceador de carga atua como um ponto único de contato para todo o tráfego na web de entrada para o grupo do Auto Scaling. Isso significa que, à medida que você adiciona ou remove instâncias do Amazon EC2 em resposta à quantidade de tráfego de entrada, essas solicitações são direcionadas para o balanceador de carga primeiro. Em seguida, as solicitações se espalham por vários recursos que lidarão com elas. Por exemplo, se você tiver várias instâncias do Amazon EC2, o Elastic Load Balancing distribuirá a carga de trabalho entre elas para que nenhuma instância tenha que carregar a maior parte. 
+
+Embora o Elastic Load Balancing e o Amazon EC2 Auto Scaling sejam serviços separados, eles trabalham juntos para que as aplicações executadas no Amazon EC2 tenham alto desempenho e disponibilidade.
+
+
+
+### Exemplo: Elastic Load Balancing
+
+#### Período de baixa demanda
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/9a34e1ab-97c4-40af-b032-504cc0d9ea3a)
+
+Aqui está um exemplo de como o Elastic Load Balancing funciona. Suponha que alguns clientes vieram à cafeteria e estão prontos para fazer seus pedidos. 
+
+Se apenas algumas caixas registradoras estão abertas, isso corresponde à demanda dos clientes que precisam do serviço. A cafeteria tem menos probabilidade de ter caixas registradoras abertas sem clientes. Nesse exemplo, você pode pensar nas caixas registradoras como instâncias do Amazon EC2.
+
+
+#### Período de alta demanda
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/9971e653-1981-4c1a-942e-8b819736e79d)
+
+Ao longo do dia, à medida que o número de clientes aumenta, a cafeteria abre mais caixas registradoras para atendê-los. 
+
+Além disso, um funcionário da cafeteria direciona os clientes para a caixa registradora mais adequada para que o número de solicitações possa ser distribuído uniformemente entre as caixas registradoras abertas. Você pode pensar nesse funcionário da cafeteria como um balanceador de carga. 
+
+
+## Sistema de mensagens e enfileiramento
+### Aplicações monolíticas e microsserviços
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/95cb7ade-f976-42d9-baa8-f5a5070c63c6)
+
+As aplicações são formadas por vários componentes. Os componentes se comunicam entre si para transmitir dados, atender solicitações e manter o aplicativo em execução. 
+
+Suponha que você tenha uma aplicação com componentes com acoplamento forte. Esses componentes podem ser bancos de dados, servidores, interface do usuário, lógica de negócios e assim por diante. Esse tipo de arquitetura pode ser considerado uma aplicação monolítica. 
+
+Nessa abordagem sobre a arquitetura da aplicação, se um único componente falhar, vai ocorrer falha de outros componentes e possivelmente de toda a aplicação.
+
+Para manter a disponibilidade da aplicação quando um único componente falha, você pode projetar essa aplicação com uma abordagem de **microsserviços**.
+Em uma abordagem de microsserviços, os componentes da aplicação têm um acoplamento fraco. Neste caso, se um único componente falhar, os outros componentes continuarão funcionando porque estarão em comunicação uns com os outros. O acoplamento fraco evita a falha completa do aplicativo. 
+
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/31cca5f1-e105-46fb-84d8-cda13b7feb85)
+
+
+Ao projetar aplicações na AWS, você pode adotar uma abordagem de microsserviços com serviços e componentes que cumprem funções diferentes. Dois serviços facilitam a integração de aplicativos: Amazon Simple Notification Service (Amazon SNS) e Amazon Simple Queue Service (Amazon SQS).
