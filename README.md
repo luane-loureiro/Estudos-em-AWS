@@ -74,56 +74,145 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 60 | Amazon Aurora | [resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula60-AmazonAurora.md)|
 
 
-## Entendendo os Serviços em Poucas Palavras:
+# Entendendo os Serviços em Poucas Palavras:
 
+## Serviços computacionais:
+**Amazon EC2 - Amazon Elastic Compute Cloud** - 
+é um serviço Web que disponibiliza **capacidade computacional** segura e redimensionável na nuvem. Ele foi projetado para facilitar a computação em nuvem na escala da web para os desenvolvedores.
+fornece instâncias de servidores com diversas configurações e opções de processamento, memória e rede.
+
+**AWS Lambda** - 
+é utilzado para implementar funções **sem servidores**.
+
+**AWS Elastic Beanstalk** - 
+
+**Amazon EC2 Auto Scaling** - 
+
+**Amazon ECS - Amazon Elastic Container Service** - 
+
+**Amazon EKS - Amazon Elastic Kubernetes Service** - 
+
+**Amazon ECR - Amazon Elastic Container Registry** - 
+
+**AWS Fargate** - 
+É um mecanismo de **computação sem servidor para contêineres** que funciona tanto com o Amazon Elastic Container Service (ECS) quanto com o Amazon Elastic Kubernetes (EKS).
+
+
+## Serviços de segurança, identidade e conformidade:
+**IAM - AWS Identity and Access Management** - 
+é o serviço de **Identidade** utilizado para gerenciar acesso de usuário e serviços.
+
+**Amazon Cognito** - 
+é um serviço que pode ser utilizado para fazer **controle de acesso em aplicações web e mobile**, ofertando diversas funcionalidades para esse fim.
+
+**AWS Shield** - 
+é um serviço gerenciado de **proteção contra DDoS** (Negação de serviço distribuída) que protege os aplicativos executados na AWS. 
+Ele fornece detecção sempre ativa e mitigações em linha automáticas que minimizam o tempo de inatividade e a latência dos aplicativos.
+
+**AWS Artifact** - 
+é um serviço que concede acesso a relatórios de segurança e conformidade da AWS e contratos on-line especiais.
+
+**AWS KMS - AWS Key Management Service** - 
+é o serviço facilita a criação e o gerenciamento de **chaves criptográficas** e o controle do seu uso em uma ampla variedade de serviços da AWS e em seus aplicativos, geralmente para dados, arquivos no S3.
+
+
+## Serviços de armazenamento
+**Amazon S3 - Amazon Simple Storage Service** - 
+
+**Amazon S3 Glacier** - 
+
+**Amazon EFS - Amazon Elastic File System** - 
+
+**Amazon EBS - Amazon Block Store** - 
+É um serviço que fornece **volumes de armazenamento a nível de bloco** que você pode usar com instâncias do Amazon EC2. Se você interromper ou terminar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis.
+
+
+## Serviços de banco de dados:
+**Amazon RDS - Amazon Relational Database Service** - 
+
+**Amazon DynamoDB** - 
+é o **banco de dados totalmente gerenciado pela AWS**, NoSQL de chave/valor;
+
+**Amazon Redshift** - 
+é um serviço de **armazenamento de dados** que realiza análise de **Big Data**. Ele oferece a capacidade de coletar dados de muitas origens e apresenta informações sobre relações e tendências no conjunto de dados. 
+
+**Amazon Aurora** - 
+é um **banco de dados** compatível com MySQL e PostgreSQL criado para a nuvem e que combina a performance e a disponibilidade de bancos de dados empresariais tradicionais com a simplicidade e a economia de bancos de dados de código aberto.
+O Amazon Aurora é até **cinco vezes mais rápido** que bancos de dados MySQL padrão e três vezes mais rápido que bancos de dados PostgreSQL padrão. 
+
+**O Amazon Neptune** - 
+é um serviço de banco de dados de grafo. O Amazon Neptune fornece a capacidade de criar e executar aplicações que funcionam com conjuntos de dados altamente conectados, como mecanismos de recomendação, detecção de fraude e grafos de conhecimento.
+
+**O Amazon Quantum Ledger Database (Amazon QLDB)** - 
+é um serviço de **banco de dados ledger**. Uma pessoa pode usar o Amazon QLDB para ver um histórico completo de todas as alterações feitas nos dados da aplicação.
+
+
+## Serviços de rede e de entrega de conteúdo:
+**Amazon VPC - Amazon Virtual Private Cloud** - 
+Virtual Private Cloud permite que você crie uma **rede privada isolada** para alocar diversos recursos.
+
+**Amazon Route 53 (dominios)** - 
+é um **web service DNS** na nuvem altamente disponível e escalável. Ele foi projetado para oferecer aos desenvolvedores e empresas uma maneira altamente confiável e econômica de direcionar os usuários finais aos aplicativos de Internet, convertendo nomes como www.example.com para endereços IP numéricos como 192.0.2.1, usados pelos computadores para se conectarem entre si. O Amazon Route 53 também é totalmente compatível com o IPv6.
+
+**Amazon CloudFront** - 
+é um serviço de entrega de conteúdo.
+
+**Elastic Load Balancing (ELB)** - 
+**distribui automaticamente o tráfego (carga)** de entrada de aplicações entre diversos destinos, como instâncias do Amazon EC2, contêineres, endereços IP, funções do Lambda e dispositivos virtuais. 
+O serviço pode lidar com a carga variável de tráfego das aplicações em uma única zona de disponibilidade ou em diversas zonas de disponibilidade
+
+## erviços de gerenciamento e governança:
+**Amazon CloudWatch** - 
+permite oferece a geração de **métricas e monitoramento** para diversos serviços e aplicações da AWS.
+
+**AWS Trusted Advisor** - 
+é uma ferramenta on-line que analisa o ambiente da AWS e faz **recomendações** em tempo real que ajudam você a seguir as práticas recomendadas da AWS. O Trusted Advisor avalia a sua conta através de verificações.
+
+**AWS CloudTrail** - 
+
+**AWS Well-Architected Tool** - 
+
+**AWS Auto Scaling** - 
+
+**AWS Command Line Interface** - 
+
+**AWS Config** - 
+
+**Console de gerenciamento da AWS** - 
+
+**AWS Organization** - 
+ajuda você a **gerenciar e controlar** seu ambiente de maneira centralizada à medida que os negócios e seus recursos da AWS expandem. Usando o AWS Organizations, você pode criar novas contas da AWS e alocar recursos, agrupar contas para organizar seus fluxos de trabalho, aplicar políticas a contas ou grupos para governança e simplificar o faturamento usando um **único método de pagamento** para todas as suas contas.
+
+## Serviços de gerenciamento de custos da AWS:
+**AWS Cost and Usage Report** - 
+são o conjunto de serviços que você usa para pagar o **faturamento**, monitorar seu uso e analisar e controlar seus custos
+
+**AWS Budgets** - 
+é o serviço utilizado para **definir orçamentos** desejáveis para a uso e incluir alertas para notificação de alertas sobre uso acima do esperado.
+permite que as empresas definam alertas personalizados que notificarão os indivíduos quando o uso de um serviço exceder (ou estiver previsto que exceda) o valor orçado. 
+
+**AWS Cost Explore** - 
+tem uma interface fácil de usar que permite **visualizar, entender e gerenciar os custos** e o uso da AWS ao longo do tempo. Relacionado ao que já foi gasto, não pra estimar.
+
+
+## Outros serviços
 #### - AWS Direct Connect 
 é um serviço de nuvem que **vincula sua rede diretamente à AWS** para oferecer performance consistente e de baixa latência.
 
 #### - AWS Management Console 
 fornece uma **interface da web simples** para a Amazon Web Services.
 
-#### - O EC2 - Elastic Compute Cloud 
-é um serviço Web que disponibiliza **capacidade computacional** segura e redimensionável na nuvem. Ele foi projetado para facilitar a computação em nuvem na escala da web para os desenvolvedores.
-fornece instâncias de servidores com diversas configurações e opções de processamento, memória e rede.
-
 #### - Scaling vertical 
 é um **update da instancia** EC2, é um melhoramento da capacidade de memoria ou processamento, é como um updade normal da sua maquina fisica.
-
-#### - O AWS Key Management Service (KMS) 
-facilita a criação e o gerenciamento de **chaves criptográficas** e o controle do seu uso em uma ampla variedade de serviços da AWS e em seus aplicativos.
 
 #### - AWS CLI ( Command Line Interface )
 É uma interface por **linha de comando** que você pode instalar pra fazer uso no seu desktop.  Ela é uma ferramenta unificada para o gerenciamento de seus produtos da AWS. Com apenas uma ferramenta para baixar e configurar, você poderá controlar vários produtos da AWS pela linha de comando e automatizá-los usando scripts.
 
-#### - O Amazon Aurora 
-é um **banco de dados** compatível com MySQL e PostgreSQL criado para a nuvem e que combina a performance e a disponibilidade de bancos de dados empresariais tradicionais com a simplicidade e a economia de bancos de dados de código aberto.
-O Amazon Aurora é até **cinco vezes mais rápido** que bancos de dados MySQL padrão e três vezes mais rápido que bancos de dados PostgreSQL padrão. 
-
 #### - SDK - Kits de desenvolvimento de software da AWS
 Um kit de desenvolvimento de software (SDK) é um conjunto de **ferramentas de criação** específicas da plataforma para desenvolvedores. Você precisa de componentes como depuradores, compiladores e bibliotecas para criar código que seja executado em uma plataforma, sistema operacional ou linguagem de programação específica.
 
-#### - AWS Fragate
-é um mecanismo de **computação sem servidor para contêineres** que funciona tanto com o Amazon Elastic Container Service (ECS) quanto com o Amazon Elastic Kubernetes (EKS).
-
-#### - O AWS Trusted Advisor 
-é uma ferramenta on-line que analisa o ambiente da AWS e faz **recomendações** em tempo real que ajudam você a seguir as práticas recomendadas da AWS. O Trusted Advisor avalia a sua conta através de verificações.
-
-#### - O AWS Shield 
-é um serviço gerenciado de **proteção contra DDoS** (Negação de serviço distribuída) que protege os aplicativos executados na AWS. 
-Ele fornece detecção sempre ativa e mitigações em linha automáticas que minimizam o tempo de inatividade e a latência dos aplicativos.
-
 #### - O Amazon Chime 
 é um **serviço de comunicação** que permite realizar reuniões, conversar e realizar chamadas de negócios dentro e fora da sua organização, usando um só aplicativo.
-
-#### - O Amazon Route 53 ("dominios")
-é um **web service DNS** na nuvem altamente disponível e escalável. Ele foi projetado para oferecer aos desenvolvedores e empresas uma maneira altamente confiável e econômica de direcionar os usuários finais aos aplicativos de Internet, convertendo nomes como www.example.com para endereços IP numéricos como 192.0.2.1, usados pelos computadores para se conectarem entre si. O Amazon Route 53 também é totalmente compatível com o IPv6.
-
-#### - O Elastic Load Balancing (ELB)
-**distribui automaticamente o tráfego (carga)** de entrada de aplicações entre diversos destinos, como instâncias do Amazon EC2, contêineres, endereços IP, funções do Lambda e dispositivos virtuais. 
-O serviço pode lidar com a carga variável de tráfego das aplicações em uma única zona de disponibilidade ou em diversas zonas de disponibilidade
-
-#### - O AWS VPC 
-Virtual Private Cloud permite que você crie uma **rede privada isolada** para alocar diversos recursos.
 
 #### - O AWS CloudFormation 
 oferece uma forma fácil de **modelar uma coleção de recursos** relacionados da AWS e de terceiros, provisioná-la com rapidez e consistência e gerenciar todo o seu ciclo de vida mediante o tratamento da **infraestrutura como código**
@@ -137,26 +226,8 @@ oferece uma forma fácil de **modelar uma coleção de recursos** relacionados d
 #### - O AWS Kinesis 
 é o serviço utilizado para coletar uma grande quantidade de aplicativos tranferindo para outros serviços através de **streaming**.
 
-#### - O Lambda 
-é utilzado para implementar funções **sem servidores**.
-
 #### - O Amazon SQS (Simple Queue Service)
 é utilizado para **enfileirar mensagens** e desacoplar o serviços dos sistemas
-
-#### - O AWS Cost Explorer 
-tem uma interface fácil de usar que permite **visualizar, entender e gerenciar os custos** e o uso da AWS ao longo do tempo. Relacionado ao que já foi gasto, não pra estimar.
-
-#### - O AWS Billing e Cost Management 
-são o conjunto de serviços que você usa para pagar o **faturamento**, monitorar seu uso e analisar e controlar seus custos
-
-#### - O AWS Organizations 
-ajuda você a **gerenciar e controlar** seu ambiente de maneira centralizada à medida que os negócios e seus recursos da AWS expandem. Usando o AWS Organizations, você pode criar novas contas da AWS e alocar recursos, agrupar contas para organizar seus fluxos de trabalho, aplicar políticas a contas ou grupos para governança e simplificar o faturamento usando um **único método de pagamento** para todas as suas contas.
-
-#### - AWS Cognito
-é um serviço que pode ser utilizado para fazer **controle de acesso em aplicações web e mobile**, ofertando diversas funcionalidades para esse fim.
-
-#### - AWS IAM 
-é o serviço de **Identidade** utilizado para gerenciar acesso de usuário e serviços.
 
 #### - IAM Policy 
 são as políticas relacionadas a cada serviços e que podem ser adicionadas a pessoas ou roles, com uma série de **permissões ou restrições**.
@@ -180,20 +251,8 @@ oferece um serviço de busca e localização para ser implementado no seu websit
 #### - O EMR
 é a **plataforma de BigData** da AWS.
 
-#### - O Amazon Neptune 
-é um serviço de banco de dados de grafo. O Amazon Neptune fornece a capacidade de criar e executar aplicações que funcionam com conjuntos de dados altamente conectados, como mecanismos de recomendação, detecção de fraude e grafos de conhecimento.
-
-#### - O Amazon CloudFront 
-é um serviço de entrega de conteúdo.
-
 #### - O AWS DeepRacer 
 é um carro de corrida autônomo de escala 1/18 que testa modelos de aprendizado por reforço
-
-#### - O CloudWatch 
-permite oferece a geração de **métricas e monitoramento** para diversos serviços e aplicações da AWS.
-
-#### - O Elastic Cache 
-permite o **armazenamento em memória temporária** para ser utilizados por aplicações escaláveis para guardar informações de sessão, consultas de bancos de dados, entre outros.
 
 #### - o Elastic Serch 
 é um serviço para **armazenar, analisar e correlacionar** uma grande quantidade de dados de logs de seus aplicativos para **identificar e resolver gargalos** de desempenho e problemas de disponibilidade
@@ -201,40 +260,14 @@ permite o **armazenamento em memória temporária** para ser utilizados por apli
 #### - O Redis 
 é ofertado pelo ElasticCache para prover **cache para as aplicações**.
 
-#### - O DynamoDb 
-é o **banco de dados totalmente gerenciado pela AWS**, NoSQL de chave/valor;
-
 #### - O Amazon Inspector 
 é um serviço de **avaliação de segurança automático** que ajuda a **melhorar a segurança e a conformidade dos aplicativos** implantados na AWS. O Amazon Inspector avalia automaticamente aplicativos em busca de exposições, vulnerabilidades ou discrepâncias em relação às melhores práticas.
 
-#### - O AWS Budgets
-é o serviço utilizado para **definir orçamentos** desejáveis para a uso e incluir alertas para notificação de alertas sobre uso acima do esperado.
-permite que as empresas definam alertas personalizados que notificarão os indivíduos quando o uso de um serviço exceder (ou estiver previsto que exceda) o valor orçado.
-
 #### - A Calculadora de Preços da AWS 
-cria uma estimativa para o custo dos casos de uso de uma empresa na AWS. Na Calculadora de Preços AWS, uma pessoa pode inserir detalhes para os requisitos de computação em nuvem e, em seguida, receber uma estimativa detalhada que pode ser exportada e compartilhada. 
-
-#### - O AWS Artifact 
-é um serviço que concede acesso a relatórios de segurança e conformidade da AWS e contratos on-line especiais.
-
-#### - AWS Config 
-você pode usar para **gravar, gerenciar e monitorar as configurações** dos seus serviços, permite acessar, auditar e avaliar as configurações dos recursos da AWS. 
-O Config monitora e grava continuamente registros das configurações de recursos da AWS e lhe permite automatizar a avaliação das configurações registradas com base nas configurações desejadas.
+cria uma estimativa para o custo dos casos de uso de uma empresa na AWS. Na Calculadora de Preços AWS, uma pessoa pode inserir detalhes para os requisitos de computação em nuvem e, em seguida, receber uma estimativa detalhada que pode ser exportada e compartilhada.
 
 #### - O Amazon Macie 
 é um serviço de **segurança e privacidade de dados** totalmente gerenciado que usa machine learning e correspondência de padrões para descobrir e proteger seus dados confidenciais na AWS. À medida que as organizações gerenciam volumes crescentes de dados, identificar e proteger seus dados confidenciais em escala pode se tornar cada vez mais complexo, caro e demorado. O Amazon Macie automatiza a descoberta de dados confidenciais em escala e reduz o custo da proteção de seus dados.
-
-#### - AWS KMS 
-é o serviço utilizado para criar chaves de criptografia para uso em diversos serviços da AWS, geralmente para dados, arquivos no S3.
-
-#### - Amazon EBS (Amazon Elastic Block Store)
-É um serviço que fornece **volumes de armazenamento a nível de bloco** que você pode usar com instâncias do Amazon EC2. Se você interromper ou terminar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis.
-
-#### - O Amazon Redshift 
-é um serviço de armazenamento de dados que realiza análise de Big Data. Ele oferece a capacidade de coletar dados de muitas origens e apresenta informações sobre relações e tendências no conjunto de dados. 
-
-#### - O Amazon Quantum Ledger Database (Amazon QLDB) 
-é um serviço de banco de dados ledger. Uma pessoa pode usar o Amazon QLDB para ver um histórico completo de todas as alterações feitas nos dados da aplicação.
 
 #### - O AWS Snowball 
 é um dispositivo para transferência de grandes quantidades de dados para dentro e para fora da AWS.
