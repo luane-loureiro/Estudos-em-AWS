@@ -33,7 +33,7 @@ exemplos dessas funções são:
 - correspondencias de padroes de dados
 - streeming de jogos e de aplicativos
 
-### Instancias otmizadas para armazenamenro - HD
+### Instancias otmizadas para armazenamenro - alta velocidade de leitura e gravação
 São projetadas para cargas de trabalho que exigem alto acesso sequencial de leitura e gravação de dados no armazenamento local.
 Exemplos de cargas de trabalho são:
 - armazenamnto de sistemas de arquivos distribuidos
