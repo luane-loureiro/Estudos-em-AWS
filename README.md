@@ -36,8 +36,8 @@ Repositorio para guardar resumos das aulas do curso AWS  Re-start da escola da N
 | Aula 22 | Integração de serviços da AWS com o Athena |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2022%20-%20Integra%C3%A7%C3%A3o%20de%20servi%C3%A7os%20da%20AWS%20com%20o%20Amazon%20Athena.md) |
 | Aula 23 | AWS Organizations | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2023%20-%20Introdu%C3%A7%C3%A3oAoAWSOrganizations.md)|
 | Aula 24 | Marcação (Tags) | [Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2024%20-%20Marca%C3%A7%C3%A3o(tag).md) |
-| Aula 25 | Gerenciamento de custos e melhores práticas da AWS | |
-| Aula 26 | Estratégia de construção da AMI | |
+| Aula 25 | Gerenciamento de custos e melhores práticas da AWS |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2025%20-%20Gerenciamento%20de%20custos%20e%20pr%C3%A1ticas%20recomendadas.md)|
+| Aula 26 | Estratégia de construção da AMI |[Resumo](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/blob/main/resumos/Aula%2026%20-%20Estrat%C3%A9gia%20de%20constru%C3%A7%C3%A3o%20da%20AMI.md)|
 | Aula 27 | Modelos de lançamento do Amazon EC2 | |
 | Aula 28 | Infraestrutura como código | |
 | Aula 29 | Introdução ao JSON e YAML | |
