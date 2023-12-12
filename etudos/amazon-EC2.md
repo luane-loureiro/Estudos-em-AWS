@@ -25,7 +25,6 @@ suponha que uma carga de trabalho exija o pré-carregameto de muitos dados antes
 - banco de dados de alto desempenho
 - cargas de trabalho que envolva a execução de processamento em tempo real de uma grande quantidade de dados não estruturado
 
-
 ### Instâncias de computação aceleda - Aceleradores Graficos
 usam celeradores de hadware ou co processadores, para executar algumas funçoes de maneira mais eficientes do que é possivel em um software executados em CPUS
 exemplos dessas funções são:
@@ -74,9 +73,31 @@ são servodores físicos com capacidade de instancia EC2 totalmente dedicada ao 
 você pode usar suas licenças de software por soquete, por nucleo ou por VM para manter a conformidade da licença. Você pode adquirir hosts dedicados sob demanda e reservas de hosts dedicados. De todas as opçoçoes do amazon EC2 que foram abordadas, od hosts dedicados são os mais caros.
 
 
+## Scaling do Amazon EC2 - Dimencionamento
+O **dimensionamento** significa começar apenas com os recursos necessários e projetar a arquitetura para responder automaticamente às alterações de demanda, fazendo aumentos ou reduções de quantidade. Como resultado, você paga apenas pelos recursos que usa. Você não precisa se preocupar com a falta de capacidade de computação para atender às necessidades dos clientes.
+Se você quisesse que o processo de scaling acontecesse automaticamente, qual serviço da AWS você usaria? 
+O serviço da AWS que fornece essa funcionalidade para instâncias do Amazon EC2 é o **Amazon EC2 Auto Scaling**.
 
+### Amazon EC2 Auto Scaling
+Se você já tentou acessar um site que não carregava e atingiu o tempo limite algumas vezes, ele pode ter recebido mais solicitações do que conseguia atender.
 
+O Amazon EC2 Auto Scaling permite que você adicione ou remova automaticamente instâncias do Amazon EC2 em resposta à alteração da demanda da aplicação. Ao fazer auto scaling das instâncias, aumentando ou reduzindo a quantidade conforme a necessidade, você tem maior percepção de disponibilidade de aplicações
+No Amazon EC2 Auto Scaling, há duas abordagens disponíveis: 
+- **Scaling dinâmico** responde às alterações na demanda. 
+- **Scaling preditivo** programa automaticamente o número correto de instâncias do Amazon EC2 com base na demanda prevista.
 
+### Exemplo: Amazon EC2 Auto Scaling
+Já que na nuvem a capacidade computacional é um recurso programático, você pode adotar uma abordagem mais flexível para o problema de scaling. 
+Ao adicionar o Amazon EC2 Auto Scaling a uma aplicação, você poderá adicionar novas instâncias à aplicação quando for necessário e terminá-las quando não for mais necessário.
+Suponha que você esteja se preparando para iniciar uma aplicação em instâncias do Amazon EC2. 
+Ao configurar o tamanho do seu grupo do Auto Scaling, você pode definir o número mínimo de instâncias do Amazon EC2 como sendo um. 
+Isso significa que, em qualquer momento, precisa haver pelo menos uma instância do Amazon EC2 em execução.
 
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/53874b69-10f8-44b4-aca3-4a61954a9609)
 
+Ao criar um grupo do Auto Scaling, você pode definir o número mínimo de instâncias do Amazon EC2. A capacidade mínima é o número de instâncias do Amazon EC2 que são iniciadas imediatamente após a criação do grupo do Auto Scaling. Neste exemplo, o grupo do Auto Scaling tem uma capacidade mínima de uma instância do Amazon EC2.
+Em seguida, você pode definir a capacidade desejada como duas instâncias do Amazon EC2, mesmo que a aplicação precise de um mínimo de uma única instância do Amazon EC2 para que seja executada.
+A terceira configuração que você pode definir em um grupo do Auto Scaling é a capacidade máxima. Por exemplo, você pode configurar o grupo do Auto Scaling para aumentar a quantidade em resposta à demanda elevada, mas apenas para um máximo de quatro instâncias do Amazon EC2.
+
+Como o Amazon EC2 Auto Scaling usa instâncias do Amazon EC2, você vai pagar apenas pelas instâncias que usar, e somente quando elas forem usadas. Você agora tem uma arquitetura econômica que proporciona a melhor experiência do cliente e ao mesmo tempo reduz custos.
 
