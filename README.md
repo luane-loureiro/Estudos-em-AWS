@@ -130,7 +130,7 @@ Ele fornece detecção sempre ativa e mitigações em linha automáticas que min
 é um serviço de **segurança e privacidade de dados** totalmente gerenciado que usa machine learning e correspondência de padrões para descobrir e proteger seus dados confidenciais na AWS. À medida que as organizações gerenciam volumes crescentes de dados, identificar e proteger seus dados confidenciais em escala pode se tornar cada vez mais complexo, caro e demorado. O Amazon Macie automatiza a descoberta de dados confidenciais em escala e reduz o custo da proteção de seus dados.
 
 **Amazon Inspector** - 
-é um serviço que verifica vulnerabilidades de segurança e desvios das práticas recomendadas de segurança das aplicações.
+é um serviço de **avaliação de segurança automático** que ajuda a **melhorar a segurança e a conformidade dos aplicativos** implantados na AWS. O Amazon Inspector avalia automaticamente aplicativos em busca de exposições, vulnerabilidades ou discrepâncias em relação às melhores práticas.
 
 **Amazon GuardDuty**
 é um serviço de detecção de ameaças que monitora continuamente suas contas e workloads da AWS para detectar atividades mal-intencionadas e entrega descobertas de segurança detalhadas, permitindo visibilidade e correção.
@@ -324,9 +324,6 @@ oferece um serviço de busca e localização para ser implementado no seu websit
 
 #### - O Redis 
 é ofertado pelo ElasticCache para prover **cache para as aplicações**.
-
-#### - O Amazon Inspector 
-é um serviço de **avaliação de segurança automático** que ajuda a **melhorar a segurança e a conformidade dos aplicativos** implantados na AWS. O Amazon Inspector avalia automaticamente aplicativos em busca de exposições, vulnerabilidades ou discrepâncias em relação às melhores práticas.
 
 #### - A Calculadora de Preços da AWS 
 cria uma estimativa para o custo dos casos de uso de uma empresa na AWS. Na Calculadora de Preços AWS, uma pessoa pode inserir detalhes para os requisitos de computação em nuvem e, em seguida, receber uma estimativa detalhada que pode ser exportada e compartilhada.
