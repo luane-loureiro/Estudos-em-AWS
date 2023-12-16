@@ -1,8 +1,8 @@
-# Aula 28 - Infraestrutura como código - Cloud Formation
+# Aula 28 - Infraestrutura como código
 ## Provisionamento de recursos
 O processo de criação de recursos de infraestrutura precisa ser consistente e confiável. 
 A infraestrutura como código (IaC) é uma estrutura para implementar tais disciplinas. 
-O AWS CloudFormation é um serviço para criar infraestrutura usando código.
+O AWS **CloudFormation** é um serviço para criar infraestrutura usando código.
 Aqui estão alguns exemplos de quando implantações repetíveis e consistentes são necessárias: 
 - A criação de ambientes de réplica para experimentação de novos serviços, testes em um espelho da infraestrutura de produção ou a implantação rápida de ambientes de recuperação após um desastre.
 - A criação de ambientes temporários para demonstrações.
