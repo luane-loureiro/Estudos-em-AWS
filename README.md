@@ -197,9 +197,7 @@ estabelecem conexões seguras entre redes locais, escritórios remotos, disposit
 é um serviço de entrega de conteúdo.
 
 **Elastic Load Balancing (ELB)** - 
-**distribui automaticamente o tráfego de aplicações** de entrada entre vários destinos e dispositivos virtuais em uma ou mais Zonas de disponibilidade (AZs).
-
-**distribui automaticamente o tráfego (carga)** de entrada de aplicações entre diversos destinos, como instâncias do Amazon EC2, contêineres, endereços IP, funções do Lambda e dispositivos virtuais. 
+**distribui automaticamente o tráfego de aplicações** de entrada entre vários destinos e dispositivos virtuais, como instâncias do Amazon EC2, contêineres, endereços IP, funções do Lambda e dispositivos virtuais.
 O serviço pode lidar com a carga variável de tráfego das aplicações em uma única zona de disponibilidade ou em diversas zonas de disponibilidade
 ele distribui automaticamente o tráfego de aplicações de entrada entre vários destinos e dispositivos virtuais em uma ou mais Zonas de disponibilidade (AZs).
 
