@@ -212,13 +212,13 @@ um serviço gerenciado que permite que desenvolvedores criem, publiquem, mantenh
 
 ## Serviços de gerenciamento e governança:
 **Amazon CloudWatch** - 
-permite oferece a geração de **métricas e monitoramento** para diversos serviços e aplicações da AWS.
+permite oferece a geração de **métricas e monitoramento** para diversos serviços e aplicações da AWS. Você ainda pode criar e disparar alarmes de monitopramento.
 
 **AWS Trusted Advisor** - 
 é uma ferramenta on-line que analisa o ambiente da AWS e faz **recomendações** em tempo real que ajudam você a seguir as práticas recomendadas da AWS. O Trusted Advisor avalia a sua conta através de verificações.
 
 **AWS CloudTrail** - 
-O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrutura da AWS, oferecendo controle sobre o armazenamento, análise e ações de remediação.
+O AWS CloudTrail monitora e registra a atividade da conta por toda a infraestrutura da AWS, oferecendo controle sobre o armazenamento, análise e ações de remediação. Ele diz, quem, fez o que, onde e quando.
 
 **AWS Well-Architected Tool** - 
 foi projetada para ajudar você a analisar o estado de suas aplicações e workloads em relação às práticas recomendadas de arquitetura, identificar oportunidades de melhoria e acompanhar o progresso ao longo do tempo.
@@ -227,6 +227,7 @@ foi projetada para ajudar você a analisar o estado de suas aplicações e workl
 
 **AWS Command Line Interface (CLI)** - 
 É uma interface por **linha de comando** que você pode instalar pra fazer uso no seu desktop.  Ela é uma ferramenta unificada para o gerenciamento de seus produtos da AWS. Com apenas uma ferramenta para baixar e configurar, você poderá controlar vários produtos da AWS pela linha de comando e automatizá-los usando scripts.
+é uma ferramenta unificada para o gerenciamento de seus produtos da AWS. Com apenas uma ferramenta para baixar e configurar, você poderá controlar vários produtos da AWS pela linha de comando e automatizá-los usando scripts.
 
 **AWS Config** - 
 avalia, audita e avalia continuamente as configurações e os relacionamentos de seus recursos na AWS, no local e em outras nuvens.
@@ -262,10 +263,6 @@ Um kit de desenvolvimento de software (SDK) é um conjunto de **ferramentas de c
 **AWS CodeCommit**
 Hospede com segurança repositórios Git privados altamente escaláveis e colabore no código.
 
-**A AWS Command Line Interface (AWS CLI)**
-é uma ferramenta unificada para o gerenciamento de seus produtos da AWS. Com apenas uma ferramenta para baixar e configurar, você poderá controlar vários produtos da AWS pela linha de comando e automatizá-los usando scripts.
-
-
 
 ### Migração
 **AWS DataSync**
@@ -279,7 +276,6 @@ serviço utilizado para realizar a **migração de banco de dados** na AWS., ele
 é um dispositivo para transferência de grandes quantidades de dados para dentro e para fora da AWS.
 
 
-
 ## Outros serviços
 #### - AWS Management Console 
 fornece uma **interface da web simples** para a Amazon Web Services.
@@ -290,7 +286,7 @@ fornece uma **interface da web simples** para a Amazon Web Services.
 #### - O Amazon Chime 
 é um **serviço de comunicação** que permite realizar reuniões, conversar e realizar chamadas de negócios dentro e fora da sua organização, usando um só aplicativo.
 
-#### - O AWS Eventi Bridge ("ponte de eventos")
+#### - O AWS Event Bridge ("ponte de eventos")
 é um barramento de **eventos** sem servidor que torna mais fácil a criação de aplicações orientadas por eventos em escala usando eventos gerados com base em suas aplicações, aplicações integradas de software como serviço (SaaS) e serviços da AWS
 
 #### - O AWS Kinesis 
