@@ -179,10 +179,8 @@ O Amazon Aurora é até **cinco vezes mais rápido** que bancos de dados MySQL p
 é um serviço de **banco de dados ledger**. Uma pessoa pode usar o Amazon QLDB para ver um histórico completo de todas as alterações feitas nos dados da aplicação.
 
 **Amazon ElastiCache**
-é um serviço totalmente gerenciado, compatível com Redis e Memcache, que oferece desempenho econômico e em tempo real para aplicações modernas. O ElastiCache pode ser escalado para centenas de milhões de operações por segundo com tempo de resposta de microssegundos e oferece segurança e confiabilidade de nível corporativo.
-
-**O Amazon ElastiCache**
 é um serviço que adiciona camadas de cache em cima de bancos de dados para **melhorar os tempos de leitura** de solicitações comuns.
+é totalmente gerenciado, compatível com Redis e Memcache, que oferece desempenho econômico e em tempo real para aplicações modernas. O ElastiCache pode ser escalado para centenas de milhões de operações por segundo com tempo de resposta de microssegundos e oferece segurança e confiabilidade de nível corporativo.
 
 
 ## Serviços de rede e de entrega de conteúdo:
