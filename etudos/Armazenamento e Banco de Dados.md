@@ -103,3 +103,57 @@ O **Amazon Elastic File System (Amazon EFS)** é um sistema de arquivos dimensio
 ### Comparação entre EBS e EFS
 
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/fa656650-2046-4e49-95c4-5944ab801c11)
+
+
+## Amazon RDS - amazon relational database service
+### Bamcos de dados mais comuns compativeis com a AWS
+- MySQL
+- PostgreSQL
+- Oracle
+- Microsoft MySQL Service
+
+  
+### Bancos de dados relacionais
+Em um banco de dados relacional, os dados são armazenados de modo que se relacionem a outros dados. 
+Um exemplo de um banco de dados relacional pode ser o sistema de gerenciamento de inventário da cafeteria. Cada registro no banco de dados incluiria dados para um único item, como nome do produto, tamanho, preço e assim por diante.
+Bancos de dados relacionais usam linguagem de consulta estruturada (SQL) para armazenar e consultar dados. Essa abordagem permite que os dados sejam armazenados de forma facilmente compreensível, consistente e dimensionável. Por exemplo, os proprietários da cafeteria podem escrever uma consulta SQL para identificar todos os clientes que compravam com mais frequência um café com leite médio.
+
+**RDBMS** - Sistema de gerenciamento de banco de dados relacional.
+
+
+### Amazon Relational Database Service
+O Amazon Relational Database Service (Amazon RDS) é um serviço que permite executar bancos de dados relacionais na nuvem AWS.
+O Amazon RDS é um serviço gerenciado que automatiza tarefas como provisão de hardware, configuração de banco de dados, patch e backups. Com esses recursos, você pode passar menos tempo concluindo tarefas administrativas e mais tempo usando dados para inovar seus aplicativos. Você pode integrar o Amazon RDS a outros serviços para atender às suas necessidades de negócios e operacionais, como usar o AWS Lambda para consultar seu banco de dados de uma aplicação sem servidor.
+O Amazon RDS tem inúmeras opções de segurança diferentes. Muitos mecanismos de banco de dados do Amazon RDS oferecem criptografia em repouso (protegendo os dados enquanto estão armazenados) e criptografia em trânsito (protegendo os dados enquanto estão sendo enviados e recebidos).
+
+#### Mecanismos de banco de dados do Amazon RDS
+O Amazon RDS está disponível em seis mecanismos de banco de dados, que otimizam memória, desempenho ou entrada/saída (E/S). Os mecanismos de banco de dados compatíveis são:
+- Amazon Aurora
+- PostgreSQL
+- MySQL
+- MariaDB
+- Oracle Database
+- Microsoft SQL Server
+
+#### Vantagens do Amazon RDS
+- Aplicacão de patches automatizado
+- Backups
+- Alta disponibilidade
+- Failover
+- Recuperação de desastres
+
+### Amazon Aurora
+O Amazon Aurora(opens in a new tab) é um banco de dados relacional de nível empresarial. É compatível com os bancos de dados relacionais MySQL e PostgreSQL. É até cinco vezes mais rápido do que os bancos de dados MySQL comuns e até três vezes mais rápido do que os bancos de dados PostgreSQL comuns.
+O Amazon Aurora ajuda a reduzir os custos do banco de dados reduzindo operações desnecessárias de entrada/saída (E/S), garantindo que os recursos do banco de dados permaneçam confiáveis e disponíveis. 
+Considere o Amazon Aurora se suas cargas de trabalho exigem alta disponibilidade. Ele replica seis cópias de seus dados em três Zonas de Disponibilidade e faz backup contínuo de seus dados para o Amazon S3.
+
+#### Benfícios do Amazon Aurora
+- MySQL
+- PostgreSQL
+- Um décimo do valor dos bancos de dados comerciais
+- Replicação de dados
+- até 15 réplicas de leitura
+- backup contínuo para o Amazon S3
+- Recuperação contínua com o poit time recovery
+
+  
