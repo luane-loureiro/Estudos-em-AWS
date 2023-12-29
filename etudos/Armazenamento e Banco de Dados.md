@@ -156,4 +156,25 @@ Considere o Amazon Aurora se suas cargas de trabalho exigem alta disponibilidade
 - backup contínuo para o Amazon S3
 - Recuperação contínua com o poit time recovery
 
-  
+## Amazon DynamoDB
+- serviço de banco de dados de chave-valor.
+- Ele oferece um desempenho de um dígito de milissegundo em qualquer scaling.
+- Totalmente gerenciado, sem servidor (serverless), o que significa que você não precisa provisionar, aplicar patches ou gerenciar servidores.
+- Banco de dados NoSQL não relacional
+- Propósito específico, nem sempre eh a melhor escolha para TODOS os usos.
+- altamente escalável, a medida que o tamanho do banco de dados expande ou retrai, ele é dimencionado automáticamente para se ajustar as altereções na capacidade, ao mesmo tempo, manter o desempenho consistente.
+
+### Bancos de dados não relacionais
+Em um banco de dados não relacional, você cria tabelas. Uma tabela é um lugar em que você pode armazenar e consultar dados.
+Bancos de dados não relacionais também são chamados de “bancos de dados NoSQL” porque usam estruturas diferentes de linhas e colunas para organizar dados. Um tipo de abordagem estrutural para bancos de dados não relacionais é o uso de pares de chave-valor. Com pares de chave-valor, os dados são organizados em itens (chaves) e cada item tem um atributo (valores). Pode-se pensar em atributos como sendo diferentes características de seus dados.
+Em um banco de dados de chave-valor, você pode adicionar ou remover atributos de itens na tabela a qualquer momento. Além disso, nem todos os itens na tabela precisam ter os mesmos atributos. 
+
+### Comparação do Amazon RDS e DynamoDB
+
+| Amazon RDS | Amazon Dynamo DB |
+|------------|------------------|
+| Bnaco de dados relacional | Banco de dados não relacional |
+| Alta disponibilidade e recuperação automática | Chave Valor |
+| clientw proprietário dos dados | Capacidade de produção maciva
+| cliente proprietário do sistema  | potencial tamanho de PB |
+| cliente controla a rede | Acesso a API granular |
