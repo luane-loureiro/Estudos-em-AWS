@@ -175,6 +175,49 @@ Em um banco de dados de chave-valor, você pode adicionar ou remover atributos d
 |------------|------------------|
 | Bnaco de dados relacional | Banco de dados não relacional |
 | Alta disponibilidade e recuperação automática | Chave Valor |
-| clientw proprietário dos dados | Capacidade de produção maciva
+| cliente proprietário dos dados | Capacidade de produção maciva
 | cliente proprietário do sistema  | potencial tamanho de PB |
 | cliente controla a rede | Acesso a API granular |
+
+## Amazon Redshift
+um serviço de data warehouse que você pode usar para análise de Big Data. Ele oferece a capacidade de coletar dados de muitas fontes além de ajudar a entender relações e tendências em todos os seus dados.
+
+## AWS Database Migration Service (AWS DMS)
+Permite migrar bancos de dados relacionais e não relacionais e outros tipos de armazenamentos de dados.
+Com o AWS DMS, você move dados entre bancos de dados de origem e de destino. Os bancos de dados de origem e de destino(opens in a new tab) podem ser do mesmo tipo ou de tipos diferentes. Durante a migração, o banco de dados de origem permanece operacional, reduzindo o tempo de inatividade em qualquer aplicativo que dependa do banco de dados. 
+Por exemplo, suponha que você tenha um banco de dados MySQL armazenado on-premises em uma instância do Amazon EC2 ou no Amazon RDS. Pense no banco de dados MySQL como seu banco de dados de origem. Usando o AWS DMS, você pode migrar seus dados para um banco de dados de destino, por exemplo, um banco de dados do Amazon Aurora.
+
+### Outros casos de uso do AWS DMS
+#### Desebvolvimento de teste de migrações de banco de dados
+Os desenvolvedores conseguem testar as aplicações com dados de produção sem afetar os usuários de rpodução
+
+#### consolidação de Banco de Dados
+Combinação de vários bancos em un único banco de dados.
+
+#### Replicação continua
+Envio de cópias contínuas dos dados para outras fontes de destino em vez de fazer uma migração única.
+
+## Serviços de banco de dados adicionais
+- **Amazon DocumentDB**
+Um serviço de banco de dados de documentos compatível com cargas de trabalho do MongoDB. (MongoDB é um programa de banco de dados de documentos.)
+
+- **Amazon Neptune**
+Um serviço de banco de dados de grafo. 
+Você pode usar o Amazon Neptune para criar e executar aplicações que funcionam com conjuntos de dados altamente conectados, como mecanismos de recomendação, detecção de fraude e grafos de conhecimento.
+
+- **Amazon Quantum Ledger Database (Amazon QLDB)**
+um serviço de banco de dados ledger. 
+Você pode usar o Amazon QLDB para ver um histórico completo de todas as alterações feitas nos dados da aplicação.
+
+- **Amazon Managed Blockchain**
+um serviço para criar e gerenciar redes de blockchain com frameworks de código aberto. 
+O Blockchain é um sistema de registro distribuído que permite que várias partes executem transações e compartilhem dados sem uma autoridade central.
+
+- **Amazon ElastiCache**
+um serviço que adiciona camadas de cache sobre bancos de dados para ajudar a melhorar os tempos de leitura de solicitações comuns. 
+Ele é compatível com dois tipos de armazenamentos de dados: Redis e Memcached.
+
+- **Amazon DynamoDB Accelerator**
+um cache em memória do DynamoDB. 
+Ele ajuda a melhorar os tempos de resposta de milissegundos para microssegundos.
+
