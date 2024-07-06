@@ -1,0 +1,11 @@
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/0d23c76d-2c7d-408c-a785-5ead96cd18d6)
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/fe00d9e7-b6c1-49cf-b4d9-d9784a9cfea6)
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/865c0dba-5e69-45f6-855c-b6c01f4c6b29)
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/7aec9332-7cd3-4352-99c8-b3c07e88c38b)
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/1b873864-d3e4-48e4-9034-80217752e77f)
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/5aa09eb8-2ed3-48f6-a4ef-5fa4cc254bc5)
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/bd2e3a8c-f90f-486d-988d-4ad1b3f3193f)
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/c814d699-85cf-43a9-abd9-b604df83e8b6)
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/70766704-a406-490a-b3a9-73ea4fe87095)
+![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/1e97b769-1544-4444-99af-fe958d0e4912)
+
