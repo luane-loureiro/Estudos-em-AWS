@@ -3,6 +3,34 @@
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/15e4f61b-905a-4485-9a2d-8dd7f204abba)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/bde9d28f-1719-4106-913b-d801bde97925)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/b6943b3b-2217-4190-8ecd-849cb30aa1ed)
+<br>
+## IAM - politica de senhas
+- senhas fortes = maior segurança para sau conta.
+- na aws você pode criar regas (policy) de uso de senhas
+  - minimo de caracteres
+  - tipos especificos de caracteres exigidos
+    - incluir letras maiusculas
+    - incluir letras minúsculas
+    - númes
+    - caracteres especiais
+  - todos os usuarios do IAM devem trocar com regularidade suas senhas (password expiration)
+  - todos os usuários podesm criar suas próprias senhas
+  - não podem usar senhas repetidas
+ 
+## MFA - multi factor Autenticator
+- Os usuários tem acesso a sua conta e podem mudar configuraçoes ou apacar recursos na sua conta.
+- você precisa proteger sua RootAccont e seus usuários IAM.
+- MFA = password que vc criou + discpositivo de segurança
+- Benefícios do MFA: se seu passowrd  for roubado ou hackeado, a sua acc não estara comprometida, pq ainda irão precisa do dispositivo de segurança
+
+### Opções de dispositivos para MFA
+- virtual MFA devices
+    - google autenticator
+    - Authy
+- universal 2nd factor (u2f) security key
+- haedwarw key fob MFA Device
+- Hardware key fob MFA device for awsGovCloud (US)
+
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/1800a2fd-4ac4-4ed0-bd2c-dfe8b2f1d0a8)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/6a0b1669-b091-43a0-8570-6105e3120ebe)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/93f56407-f315-4d52-bc2f-c12de8a1d925)
