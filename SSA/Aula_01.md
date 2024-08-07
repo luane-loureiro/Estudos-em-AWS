@@ -1,9 +1,36 @@
-![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/3aadf260-6824-4290-9385-26247630a819)
-![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/1e0d30e7-3fbb-40f7-9031-8937cadc0c5c)
-![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/15e4f61b-905a-4485-9a2d-8dd7f204abba)
-![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/bde9d28f-1719-4106-913b-d801bde97925)
-![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/b6943b3b-2217-4190-8ecd-849cb30aa1ed)
+# Infra Estrutura Global da AWS
+![image](https://github.com/user-attachments/assets/013febea-50f6-4e11-9a31-cff3bec96192)
+
+- regiões
+- Zonas disponibilidades
+- AWS data center
+- AWS Edge Location
+
+## ambientes AWS
+- Exemplos de Ambiente de serviços Globais
+  - indentity Acess Management (IAM)
+  - Route 53 (DNS Service)
+  - CloudFront (Content Delivery NetWork)
+  - WAF (Web Application Firewall)
+
+- AWS Exemplo de Serviços de escopo de região
+  - Amazon EC2 (infra estrutura as a service)
+  - Elástic beanstalk (plataform as a service)
+  - Lmabda (Function as a service)
+  - Recognition (Softwaew as a service)
+ 
+# AWS Identity and Acess Management (IAM) 
+## IAM: User Group
+- IAM = identity and acess Management, um serviço Global
+- conta root criada por padrão, não deve ser usada ou compartilhada
+- Os usuários são pessoas dentro da sua organização e podem ser agrupadas
+- os grupos contem apenas usuários, nao podem conter outros grupos
+- Os usuários não precisam pertencer a um grupo, e os usuários podem pertencer a vários grupos
+
+![image](https://github.com/user-attachments/assets/d9ec3b31-526d-4c19-94a4-4d36bac8f29e)
+
 <br>
+
 ## IAM - politica de senhas
 - senhas fortes = maior segurança para sau conta.
 - na aws você pode criar regas (policy) de uso de senhas
@@ -31,9 +58,39 @@
 - haedwarw key fob MFA Device
 - Hardware key fob MFA device for awsGovCloud (US)
 
-![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/1800a2fd-4ac4-4ed0-bd2c-dfe8b2f1d0a8)
-![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/6a0b1669-b091-43a0-8570-6105e3120ebe)
-![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/93f56407-f315-4d52-bc2f-c12de8a1d925)
+## IAM - Funçôes para Serviços
+- Alguns serviços da AWS precisarão executar algumas ações em seu nome
+- para isso, atribuimos permições aos serviçõs da AWS com funções do IAM
+- Funções comuns:
+  - funções de instacias do EC2
+  - Funções Lambda
+  - Funções Cloud Formation
+    
+  ![image](https://github.com/user-attachments/assets/3dd49627-a637-4445-9d12-05fe3a58ea7d)
+
+## IAM -  Diretrizes Prátoicas Recomendadas
+- Não use a conta raiz, exeto para a configuração da conta da aws
+- um usuário físico = um usuário da aws
+- Atribuir usuários a grupos e atribuir permições a grupos
+- criar uma política de senha forte
+- usar um impor o uso de Mult Factor Authentication (MFA)
+- Criar e usar fubnções para concender permições aos serviços da AWS
+- Utilizar chaves de acesso para acessi Programático (CLI/SDK)
+- Auditar permições de sua conta usando o relatório de credenciais do IAM e o IAM Access Advisor.
+- Nunca Compartilhe usuários do IAM e chaves de acesso.
+
+## IAM - Resumo 
+- Usuários: Mapeando para um usuário físico, tem uma senha para o Console AWS
+- Grupos: contém apenas usuários
+- Políticas: Documentos JSON que descreve permições para usuários ou grupos
+- Funções: para instâncias do EC2 ou serviço da AWS
+- Segurança: MFA + Política de senha
+- AWS CLI: Gerencie seus serviços da aws usando uma linha de comando
+- AWS SDK:  gerencie seus serviços da AWS usando uma linguagem de programação
+- Chaves de acesso: acesse a AWS usando a CLI ou SDK
+- Auditoria: Relatórios de credenciais do IAM e IAM Acess Advisor.
+
+
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/fcfcc388-b389-42c6-901a-4dd7f79a7723)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/ea30084b-d169-4ba7-95df-6712ecd3bb7e)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/d95dc9b7-762c-4bdd-9266-2e9d2aa759b5)
