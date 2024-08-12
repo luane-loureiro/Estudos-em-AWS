@@ -90,6 +90,86 @@
 - Chaves de acesso: acesse a AWS usando a CLI ou SDK
 - Auditoria: Relatórios de credenciais do IAM e IAM Acess Advisor.
 
+# Amazon EC2 nivel Foundation
+
+## EC2 Dimencionamento e opções de Configuração 
+- sistema operacional: windows, Linux ou macOs
+- Poder de Computação & nucleos (CPU)
+- Quanta memória de acesso aleatório (RAM)
+- Quanto espaço de Armazenamento
+  - Network- atarchemet(EBS e EFS)
+  - Hardware (EC2 Instance Store)
+- Placa de rede: velocidade da Placa, endereço e Ip Público
+- Regras de firewall: Security Group
+- Bootstarp Script(Configurar na primeira inicialisação): EC2 user data
+
+## EC2 User Data
+- É possível inicializar nossas instâncias usando um script de dados do usuário EC2.
+- inicialização significa iniciar comandos quando uma máquina inicia
+- Esse script é executado apenas uma vez na primeira inicialização da instância
+- Dados do usuário EC2 são usados ​​para automatizar tarefas de inicialização, como:
+  - Instalação de atualizações
+  - Instalação de software
+  - Download de arquivos comuns da Internet
+  - Qualquer coisa que você possa imaginar
+- O script de dados do usuário EC2 é executado com o usuário root
+
+## Tipos de instância EC2
+### Visão geral
+- Você pode usar diferentes tipos de instâncias EC2 que são otimizadas para diferentes casos de uso (https://aws.amazon.com/ec2/instance-types/)
+- A AWS tem a seguinte convenção de nomenclatura:
+  
+> ### m5.2xlarge
+
+- m: classe de instância
+- 5: geração (a AWS as aprimora ao longo do tempo)
+- 2xlarge: tamanho dentro da classe de instância
+
+### Instancias de Propósito geral
+- Ótimo para uma diversidade de cargas de trabalho, como servidores web ou repositórios de código
+- Equilíbrio entre:
+  	- Computação
+  	-  Memória
+  	-  Rede
+
+### Instancias Otimizadas para computação
+- Ótimo para tarefas intensivas de computação que exigem processadores
+de alto desempenho:
+  - Cargas de trabalho de processamento em lote
+  -  Transcodificação de mídia
+  -  Servidores web de alto desempenho
+  -  Computação de alto desempenho (HPC)
+  -  Modelagem científica e aprendizado de máquina
+  -  Servidores de jogos dedicados
+
+### Instancias com Memória otimizada
+- Desempenho rápido para cargas de trabalho que processam grandes conjuntos de dados na memória
+- Casos de uso:
+  - Bancos de dados relacionais/não relacionais de alto desempenho
+  -  Armazenamentos de cache de escala da Web distribuídos
+  -   Bancos de dados na memória otimizados para BI (business intelligence)
+  -    Aplicativos que executam processamento em tempo real de grandes dados não estruturados
+ 
+### Instâncias com Armazenamento otimizado
+- Ótimo para tarefas intensivas em armazenamento que exigem alto acesso sequencial de leitura e gravação a grandes conjuntos de dados no armazenamento local
+- Casos de uso:
+  - Sistemas de processamento de transações on-line de alta frequência (OLTP)
+  - Bancos de dados relacionais e NoSQL
+  - Cache para bancos de dados na memória (por exemplo, Redis)
+  - Aplicativos de data warehousing
+  - Sistemas de arquivos distribuídos
+
+## Opções de Compra de instancias EC2
+- **Instâncias sob demanda (On-Demand)** – carga de trabalho curta, preços previsíveis, pagamento por segundo
+- **Reservadas** (1 e 3 anos)
+  -  **Instâncias reservadas** – cargas de trabalho longas
+  -  **Instâncias reservadas conversíveis**  – cargas de trabalho longas com instâncias flexíveis
+- **Savings Plans** (1 e 3 anos) – compromisso com uma quantidade de uso, carga de trabalho longa
+- **Instâncias spot** – cargas de trabalho curtas, baratas, podem perder instâncias (menos confiáveis)
+- **Hosts dedicados** – reserve um servidor físico inteiro, controle o posicionamento da instância
+- **Instâncias dedicadas** – nenhum outro cliente compartilhará seu hardware
+- **Reservas de capacidade** – reserve capacidade em uma AZ específica por qualquer duração
+
 
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/fcfcc388-b389-42c6-901a-4dd7f79a7723)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/ea30084b-d169-4ba7-95df-6712ecd3bb7e)
