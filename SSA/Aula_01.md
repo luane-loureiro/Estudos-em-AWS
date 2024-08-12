@@ -171,8 +171,8 @@ de alto desempenho:
 - **Reservas de capacidade** – reserve capacidade em uma AZ específica por qualquer duração
 
 
-![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/fcfcc388-b389-42c6-901a-4dd7f79a7723)
-![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/ea30084b-d169-4ba7-95df-6712ecd3bb7e)
+
+
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/d95dc9b7-762c-4bdd-9266-2e9d2aa759b5)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/191cf507-e035-4987-980c-64a35ce028fb)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/058e5bb2-6f85-4e31-832a-2e06bd970365)
