@@ -329,6 +329,139 @@ isso).
 - Se sua máquina for parada e depois iniciada,
 - IP público pode mudar
 
+## Grupos de posicionamento - Placement Groups
+- Às vezes, você quer controlar a estratégia de posicionamento da instância EC2
+- Essa estratégia pode ser definida usando grupos de posicionamento
+- Ao criar um grupo de posicionamento, você especifica uma das seguintes estratégias para o grupo:
+  - **Cluster** — agrupa instâncias em um grupo de baixa latência em uma única Zona de disponibilidade
+  - **Spread** — espalha instâncias pelo hardware subjacente (máximo de 7 instâncias por grupo por AZ)
+  - **Partition** — espalha instâncias por muitas partições diferentes (que dependem de diferentes conjuntos de racks) dentro de uma AZ. Escala para centenas de instâncias EC2 por grupo (Hadoop, Cassandra, Kafka)
+
+### Grupos de posicionamento - Cluster
+- **Prós:**
+  - Ótima rede (largura de banda de 10 Gbps entre instâncias com Enhanced Networking habilitado - recomendado)
+- **Contras:**
+  - Se o AZ falhar, todas as instâncias falharão ao mesmo tempo
+- **Caso de uso:**
+  - Tarefa de Big Data que precisa ser concluída rapidamente
+  - Aplicativo que precisa de latência extremamente baixa e alta taxa de transferência de rede
+![image](https://github.com/user-attachments/assets/bd2aaa4c-5398-411c-8f06-9442bf801c72)
+
+### Grupos de posicionamento - Spread (Distribuição)
+- **Prós:**
+  - Pode abranger Zonas de disponibilidade (AZ)
+  - Risco reduzido é falha simultânea
+  - Instâncias EC2 estão em hardware físico diferente
+- **Contras:**
+  - Limitado a 7 instâncias por AZ por grupo de posicionamento
+- **Caso de uso:**
+  - Aplicativo que precisa maximizar alta disponibilidade
+  - Aplicativos críticos onde cada instância deve ser isolada de falhas uma da outra
+ 
+![Capturar](https://github.com/user-attachments/assets/34176721-40ba-4166-84f7-77f7ad0bba33)
+
+### Grupos de posicionamentos Partição
+- Até 7 partições por AZ
+- Pode abranger várias AZs na mesma região
+- Até 100s de instâncias EC2
+- As instâncias em uma partição não compartilham racks com as instâncias nas outras partições
+- Uma falha de partição pode afetar muitos EC2, mas não afetará outras partições
+- As instâncias EC2 têm acesso às informações da partição como metadados
+- Casos de uso: HDFS, HBase, Cassandra,
+Kafka
+
+## Elastic Network Interfaces (ENI)
+- Componente lógico em uma VPC que representa uma placa de rede virtual
+- A ENI pode ter os seguintes atributos:
+  - IPv4 privado primário, um ou mais IPv4 secundários
+  - Um IP elástico (IPv4) por IPv4 privado
+  - Um IPv4 público
+  - Um ou mais grupos de segurança
+  - Um endereço MAC
+- Você pode criar ENI de forma independente e anexá-los on the fly (movê-los) em instâncias EC2 para failover
+- Vinculado a uma zona de disponibilidade (AZ) específica
+
+![image](https://github.com/user-attachments/assets/6a357080-c6df-4a3c-8d0d-1d1cdc5ee15d)
+
+
+## EC2 Hibernate
+- Sabemos que podemos parar, encerrar instâncias
+  - Parar – os dados no disco (EBS) são mantidos intactos na próxima inicialização
+  - Terminar – quaisquer volumes EBS (raiz) também configurados para serem destruídos são perdidos
+  - 
+- Na inicialização, acontece o seguinte:
+  - Primeira inicialização: o sistema operacional inicializa e o script de dados do usuário do EC2 é executado
+  - Iniciações seguintes: o sistema operacional inicializa
+- Então seu aplicativo inicia, os caches são aquecidos e isso pode levar tempo!
+- **Introduçao ao EC2 Hibernate:**
+  - O estado na memória (RAM) é preservado
+  - A inicialização da instância é muito mais rápida! (o SO não é interrompido/reiniciado)
+  - Nos bastidores: o estado da RAM é gravado em um arquivo no volume raiz do EBS
+  - O volume raiz do EBS deve ser criptografado
+- **Casos de uso:**
+  - Processamento de longa duração
+  - Salvando o estado da RAM
+  - Serviços que levam tempo para inicializar
+ 
+### EC2 Hibernate – o que devemos saber...
+- **Famílias de instâncias suportadas** – C3, C4, C5, I3, M3, M4, R3, R4, T2, T3, …
+- **Tamanho da RAM da instância** – deve ser menor que 150 GB.
+- **Tamanho da instância** – não suportado para instâncias bare metal.
+- **AMI** – Amazon Linux 2, Linux AMI, Ubuntu, RHEL, CentOS e Windows…
+- **Volume raiz** – deve ser EBS, criptografado, não armazenamento de instância e grande
+- **Disponível** - para instâncias sob demanda, reservadas e spot
+- Uma instância NÃO pode ser hibernada por mais de 60 dias
+
+# Amazon EC2 – Instance Storage
+## O que é um volume EBS?
+- Um volume EBS (Elastic Block Store) é uma unidade de rede que você pode anexar às suas instâncias enquanto elas são executadas
+- Ele permite que suas instâncias persistam dados, mesmo após seu término
+- Elas só podem ser montadas em uma instância por vez (no nível CCP)
+- Elas são vinculadas a uma zona de disponibilidade específica
+- Analogia: pense nelas como um "pendrive de rede"
+- Nível gratuito: 30 GB de armazenamento EBS gratuito do tipo General Purpose (SSD) ou Magnetic por mês
+
+## Volume EBS
+- É uma unidade de rede (ou seja, não uma unidade física)
+  - Ela usa a rede para comunicar a instância, o que significa que pode haver um pouco de latência
+  - Ela pode ser desanexada de uma instância EC2 e anexada a outra rapidamente
+
+- Ela está bloqueada em uma Zona de Disponibilidade (AZ)
+  - Um Volume EBS em us-east-1a não pode ser anexado a us-east-1b
+  - Para mover um volume, primeiro você precisa fazer um snapshot dele
+
+- Tenha uma capacidade provisionada (tamanho em GBs e IOPS)
+  - Você é cobrado por toda a capacidade provisionada
+  - Você pode aumentar a capacidade da unidade ao longo do tempo
+ 
+## EBS – Delete on Termination attribute
+- Controla o comportamento do EBS quando uma instância EC2 é encerrada
+  - Por padrão, o volume raiz do EBS é excluído (atributo habilitado)
+  - Por padrão, qualquer outro volume EBS anexado não é excluído (atributo desabilitado)
+- Isso pode ser controlado pelo console da AWS/AWS CLI
+- **Caso de uso:**
+  - preservar o volume raiz quando a instância é encerrada
+
+## EBS Snapshots
+- Faça um backup (snapshot) do seu volume EBS em um ponto no tempo
+- Não é necessário desanexar o volume para fazer o snapshot, mas é recomendado
+- Pode copiar snapshots em AZ ou região
+
+![image](https://github.com/user-attachments/assets/2c4cd069-21b6-4538-9b3c-409831b97b3e)
+
+
+## Visão geral do AMI
+- AMI = Amazon Machine Image
+- AMI são uma personalização de uma instância EC2
+- Você adiciona seu próprio software, configuração, sistema operacional, monitoramento...
+- Tempo de inicialização/configuração mais rápido porque todo o seu software é pré-empacotado
+- AMI são criados para uma região específica (e podem ser copiados entre regiões)
+- Você pode iniciar instâncias EC2 de:
+- Um AMI público: fornecido pela AWS
+- Seu próprio AMI: você os cria e os mantém você mesmo
+- Um AMI do AWS Marketplace: um AMI que outra pessoa criou (e potencialmente vende)
+
+
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/191cf507-e035-4987-980c-64a35ce028fb)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/058e5bb2-6f85-4e31-832a-2e06bd970365)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/77d8cdae-1c8c-4e7b-ab01-453331cc7022)
