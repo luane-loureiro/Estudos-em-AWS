@@ -452,14 +452,17 @@ Kafka
 
 ## Visão geral do AMI
 - AMI = Amazon Machine Image
+
 - AMI são uma personalização de uma instância EC2
-- Você adiciona seu próprio software, configuração, sistema operacional, monitoramento...
-- Tempo de inicialização/configuração mais rápido porque todo o seu software é pré-empacotado
+  - Você adiciona seu próprio software, configuração, sistema operacional, monitoramento...
+  - Tempo de inicialização/configuração mais rápido porque todo o seu software é pré-empacotado
+
 - AMI são criados para uma região específica (e podem ser copiados entre regiões)
+
 - Você pode iniciar instâncias EC2 de:
-- Um AMI público: fornecido pela AWS
-- Seu próprio AMI: você os cria e os mantém você mesmo
-- Um AMI do AWS Marketplace: um AMI que outra pessoa criou (e potencialmente vende)
+  - Um AMI público: fornecido pela AWS
+  - Seu próprio AMI: você os cria e os mantém você mesmo
+  - Um AMI do AWS Marketplace: um AMI que outra pessoa criou (e potencialmente vende)
 
 
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/191cf507-e035-4987-980c-64a35ce028fb)
