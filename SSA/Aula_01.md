@@ -170,7 +170,164 @@ de alto desempenho:
 - **Instâncias dedicadas** – nenhum outro cliente compartilhará seu hardware
 - **Reservas de capacidade** – reserve capacidade em uma AZ específica por qualquer duração
 
+### EC2 On Demand
+- Pague pelo que você usa:
+  - Linux ou Windows - cobrança por segundo, após o primeiro minuto
+  - Todos os outros sistemas operacionais - cobrança por hora
+- Tem o custo mais alto, mas sem pagamento inicial
+- Nenhum compromisso de longo prazo
+- Recomendado para cargas de trabalho de curto prazo e ininterruptas, onde você não pode prever como o aplicativo se comportará
 
+
+### Instâncias reservadas do EC2
+- Até 72% de desconto em comparação com o On-demand
+- Você reserva atributos de instância específicos (tipo de instância, região, locação, sistema operacional)
+- Período de reserva – 1 ano (+desconto) ou 3 anos (+++desconto)
+- Opções de pagamento – Sem adiantamento (+), adiantamento parcial (++), adiantamento total (+++)
+- Escopo da instância reservada – regional ou zonal (capacidade de reserva em uma AZ)
+- Recomendado para aplicativos de uso em estado estável (pense em banco de dados)
+- Você pode comprar e vender no Reserved Instance Marketplace
+- Instância reservada conversível
+  - Pode alterar o tipo de instância EC2, família de instâncias, sistema operacional, escopo e locação
+  - Até 66% de desconto
+ 
+### EC2 Savings Plans
+- Obtenha um desconto com base no uso de longo prazo (até 72% - o mesmo que RIs)
+- Comprometa-se com um certo tipo de uso (US$ 10/hora por 1 ou 3 anos)
+- O uso além dos EC2 Savings Plans é cobrado pelo preço On-Demand
+- Bloqueado para uma família de instâncias específica e região da AWS (por exemplo, M5 em us-east-1)
+- Flexível em:
+  - Tamanho da instância (por exemplo, m5.xlarge, m5.2xlarge)
+  - SO (por exemplo, Linux, Windows)
+  - Locação (Host, Dedicado, Padrão)
+ 
+### Instâncias Spot do EC2
+- Pode obter um desconto de até 90% em comparação com o On-demand
+- Instâncias que você pode "perder" a qualquer momento se seu preço máximo for menor que o
+- Preço spot atual
+- As instâncias MAIS econômicas na AWS
+- Úteis para cargas de trabalho que são resilientes a falhas
+  - Trabalhos em lote
+  - Análise de dados
+  - Processamento de imagens
+  - Quaisquer cargas de trabalho distribuídas
+  - Cargas de trabalho com um horário de início e término flexível
+- Não adequado para trabalhos ou bancos de dados críticos
+
+### Hosts dedicados EC2
+- Um servidor físico com capacidade de instância EC2 totalmente dedicada ao seu uso
+- Permite que você atenda aos requisitos de conformidade e use suas licenças de software vinculadas ao servidor existentes (por-socket, por-core, por licensa de software de maquina vrtual)
+- Opções de compra:
+  - **Sob demanda** — pague por segundo para Host dedicado ativo
+  - **Reservado** — 1 ou 3 anos (sem adiantamento, adiantamento parcial, adiantamento total)
+- A opção mais cara
+- Útil para software que tem modelo de licenciamento complicado (BYOL — Bring Your Own License)
+- Ou para empresas que têm fortes necessidades regulatórias ou de conformidade
+
+### EC2 Dedicated Instances 
+- Instances run on hardware that’s dedicated to you
+- May share hardware with other instances in same account
+- No control over instance placement (can move hardware after Stop / Start)
+
+### Reservas de Capacidade EC2
+- Reserve capacidade de instâncias On-Demand em uma AZ específica para qualquer duração
+- Você sempre tem acesso à capacidade EC2 quando precisar
+- Sem compromisso de tempo (crie/cancele a qualquer momento), sem descontos de cobrança
+- Combine com Instâncias Reservadas Regionais e Planos de Economia para se beneficiar de descontos de cobrança
+- Você é cobrado pela taxa On-Demand, independentemente de executar instâncias ou não
+- Adequado para cargas de trabalho ininterruptas de curto prazo que precisam estar em uma AZ específica
+
+### Qual opção de compra é a certa para mim?
+Vamos confaram a planejar uma viagem até um resort: 
+- **Sob demanda:** chegando e ficando no resort quando quisermos, pagamos o preço integral
+- **Reservado:** como planejar com antecedência e se planejamos ficar por um longo tempo, podemos obter um bom desconto.
+- **Planos de economia:** pague uma certa quantia por hora por um determinado período e fique em qualquer tipo de quarto (por exemplo,
+King, Suíte, Vista para o mar, …)
+- **Instâncias pontuais:** o hotel permite que as pessoas façam lances pelos quartos vazios e o maior lance fica com os
+quartos. Você pode ser expulso a qualquer momento se alguém estiver disposto a pagar mais.
+- **Anfitriões dedicados:** reservamos um prédio inteiro do resort
+- **Reservas de capacidade:** você reserva um quarto por um período com preço integral, mesmo que não fique nele
+
+### Solicitações de instância spot do EC2
+- Pode obter um desconto de até 90% em comparação com o On-demand
+- Defina o preço spot máximo e obtenha a instância enquanto o preço spot atual < máximo
+  - O preço spot por hora varia com base na oferta e capacidade
+  - Se o preço spot atual > seu preço máximo, você pode optar por interromper ou encerrar sua instância com um período de carência de 2 minutos.
+- Outra estratégia: ***Spot Block***
+  - "bloqueie" a instância spot durante um período de tempo especificado (1 a 6 horas) sem interrupções
+  - Em situações raras, a instância pode ser recuperada
+- Usado para trabalhos em lote, análise de dados ou cargas de trabalho que são resilientes a falhas.
+- Não é ótimo para trabalhos ou bancos de dados críticos
+
+### Spot Fleets
+- Spot Fleets = conjunto de Instâncias Spot + (opcional) Instâncias On-Demand
+- A Spot Fleets tentará atingir a capacidade alvo com restrições de preço
+  - Defina possíveis pools de lançamento: tipo de instância (m5.large), SO, Zona de Disponibilidade
+  - Pode ter vários pools de lançamento, para que a frota possa escolher
+  - A Spot Fleets para de lançar instâncias ao atingir a capacidade ou o custo máximo
+- Estratégias para alocar Instâncias Spot:
+  - **lowestPrice:** do pool com o menor preço (otimização de custo, carga de trabalho curta)
+  - **diversified:** distribuído em todos os pools (ótimo para disponibilidade, cargas de trabalho longas)
+  - **capacityOptimized:** pool com a capacidade ideal para o número de instâncias
+  - **priceCapacityOptimized (recomendado):** pools com a maior capacidade disponível, então selecione pool com o menor preço (melhor escolha para a maioria das cargas de trabalho)
+- As Spot Fleets nos permitem solicitar automaticamente Instâncias Spot com o menor preço
+
+
+# Amazon EC2 – Associate
+## IP privado vs. IP público (IPv4)
+- A rede tem dois tipos de IPs. IPv4 e IPv6:
+  - IPv4: 1.160.10.240
+  - IPv6: 3ffe:1900:4545:3:200:f8ff:fe21:67cf
+<br>
+
+- Neste curso, usaremos apenas IPv4.
+- IPv4 ainda é o formato mais comum usado online.
+- IPv6 é mais novo e resolve problemas para a Internet das Coisas (IoT).
+- IPv4 permite 3,7 bilhões de endereços diferentes no espaço público
+- IPv4: [0-255].[0-255].[0-255].[0-255].
+
+## IP privado vs. IP público (IPv4) - Diferenças fundamentais
+- **IP público:**
+  - IP público significa que a máquina pode ser identificada na internet (WWW)
+  - Deve ser único em toda a web (duas máquinas não podem ter o mesmo IP público).
+  - Pode ser geolocalizado facilmente
+<br>
+
+- **IP privado:**
+  - IP privado significa que a máquina só pode ser identificada em uma rede privada
+  - O IP deve ser único na rede privada
+  - MAS duas redes privadas diferentes (duas empresas) podem ter os mesmos IPs.
+  - As máquinas se conectam à WWW usando um NAT + gateway de internet (um proxy)
+  - Apenas um intervalo especificado de IPs pode ser usado como IP privado
+
+
+## IPs elásticos
+- Quando você para e inicia uma instância EC2, ela pode alterar seu IP
+público.
+- Se você precisa ter um IP público fixo para sua instância, você precisa de um
+IP elástico
+- Um IP elástico é um IP IPv4 público que você possui, desde que não o exclua
+- Você pode anexá-lo a uma instância por vez
+- Com um endereço IP elástico, você pode mascarar a falha de uma instância ou software
+remapeando rapidamente o endereço para outra instância em sua conta.
+- Você pode ter apenas 5 IP elásticos em sua conta (você pode pedir à AWS para aumentar
+isso).
+- No geral, tente evitar usar IP elástico:
+  - Eles geralmente refletem decisões arquitetônicas ruins
+  - Em vez disso, use um IP público aleatório e registre um nome DNS para ele
+  - Ou, como veremos mais tarde, use um balanceador de carga e não use um IP público
+
+## IP privado vs. IP público (IPv4) - Hand on
+- Por padrão, sua máquina EC2 vem com:
+  - Um IP privado para a rede interna da AWS
+  - Um IP público, para a WWW.<br>
+  
+- Quando estamos fazendo SSH em nossas máquinas EC2:
+  - Não podemos usar um IP privado, porque não estamos na mesma rede
+  - Só podemos usar o IP público.<br>
+  
+- Se sua máquina for parada e depois iniciada,
+- IP público pode mudar
 
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/191cf507-e035-4987-980c-64a35ce028fb)
 ![image](https://github.com/luane-loureiro/EscolaDaNuvem-AWS/assets/100947092/058e5bb2-6f85-4e31-832a-2e06bd970365)
