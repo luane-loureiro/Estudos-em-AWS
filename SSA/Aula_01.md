@@ -58,6 +58,7 @@
 - haedwarw key fob MFA Device
 - Hardware key fob MFA device for awsGovCloud (US)
 
+
 ## IAM - Funçôes para Serviços
 - Alguns serviços da AWS precisarão executar algumas ações em seu nome
 - para isso, atribuimos permições aos serviçõs da AWS com funções do IAM
@@ -67,6 +68,7 @@
   - Funções Cloud Formation
     
   ![image](https://github.com/user-attachments/assets/3dd49627-a637-4445-9d12-05fe3a58ea7d)
+
 
 ## IAM -  Diretrizes Prátoicas Recomendadas
 - Não use a conta raiz, exeto para a configuração da conta da aws
@@ -79,6 +81,7 @@
 - Auditar permições de sua conta usando o relatório de credenciais do IAM e o IAM Access Advisor.
 - Nunca Compartilhe usuários do IAM e chaves de acesso.
 
+
 ## IAM - Resumo 
 - Usuários: Mapeando para um usuário físico, tem uma senha para o Console AWS
 - Grupos: contém apenas usuários
@@ -89,6 +92,7 @@
 - AWS SDK:  gerencie seus serviços da AWS usando uma linguagem de programação
 - Chaves de acesso: acesse a AWS usando a CLI ou SDK
 - Auditoria: Relatórios de credenciais do IAM e IAM Acess Advisor.
+
 
 # Amazon EC2 nivel Foundation
 
@@ -103,6 +107,7 @@
 - Regras de firewall: Security Group
 - Bootstarp Script(Configurar na primeira inicialisação): EC2 user data
 
+
 ## EC2 User Data
 - É possível inicializar nossas instâncias usando um script de dados do usuário EC2.
 - inicialização significa iniciar comandos quando uma máquina inicia
@@ -113,6 +118,7 @@
   - Download de arquivos comuns da Internet
   - Qualquer coisa que você possa imaginar
 - O script de dados do usuário EC2 é executado com o usuário root
+
 
 ## Tipos de instância EC2
 ### Visão geral
@@ -125,12 +131,14 @@
 - 5: geração (a AWS as aprimora ao longo do tempo)
 - 2xlarge: tamanho dentro da classe de instância
 
+
 ### Instancias de Propósito geral
 - Ótimo para uma diversidade de cargas de trabalho, como servidores web ou repositórios de código
 - Equilíbrio entre:
   	- Computação
   	-  Memória
   	-  Rede
+
 
 ### Instancias Otimizadas para computação
 - Ótimo para tarefas intensivas de computação que exigem processadores
@@ -142,6 +150,7 @@ de alto desempenho:
   -  Modelagem científica e aprendizado de máquina
   -  Servidores de jogos dedicados
 
+
 ### Instancias com Memória otimizada
 - Desempenho rápido para cargas de trabalho que processam grandes conjuntos de dados na memória
 - Casos de uso:
@@ -149,6 +158,7 @@ de alto desempenho:
   -  Armazenamentos de cache de escala da Web distribuídos
   -   Bancos de dados na memória otimizados para BI (business intelligence)
   -    Aplicativos que executam processamento em tempo real de grandes dados não estruturados
+
  
 ### Instâncias com Armazenamento otimizado
 - Ótimo para tarefas intensivas em armazenamento que exigem alto acesso sequencial de leitura e gravação a grandes conjuntos de dados no armazenamento local
@@ -158,6 +168,7 @@ de alto desempenho:
   - Cache para bancos de dados na memória (por exemplo, Redis)
   - Aplicativos de data warehousing
   - Sistemas de arquivos distribuídos
+
 
 ## Opções de Compra de instancias EC2
 - **Instâncias sob demanda (On-Demand)** – carga de trabalho curta, preços previsíveis, pagamento por segundo
@@ -169,6 +180,7 @@ de alto desempenho:
 - **Hosts dedicados** – reserve um servidor físico inteiro, controle o posicionamento da instância
 - **Instâncias dedicadas** – nenhum outro cliente compartilhará seu hardware
 - **Reservas de capacidade** – reserve capacidade em uma AZ específica por qualquer duração
+
 
 ### EC2 On Demand
 - Pague pelo que você usa:
@@ -190,6 +202,7 @@ de alto desempenho:
 - Instância reservada conversível
   - Pode alterar o tipo de instância EC2, família de instâncias, sistema operacional, escopo e locação
   - Até 66% de desconto
+
  
 ### EC2 Savings Plans
 - Obtenha um desconto com base no uso de longo prazo (até 72% - o mesmo que RIs)
@@ -200,6 +213,7 @@ de alto desempenho:
   - Tamanho da instância (por exemplo, m5.xlarge, m5.2xlarge)
   - SO (por exemplo, Linux, Windows)
   - Locação (Host, Dedicado, Padrão)
+
  
 ### Instâncias Spot do EC2
 - Pode obter um desconto de até 90% em comparação com o On-demand
@@ -214,6 +228,7 @@ de alto desempenho:
   - Cargas de trabalho com um horário de início e término flexível
 - Não adequado para trabalhos ou bancos de dados críticos
 
+
 ### Hosts dedicados EC2
 - Um servidor físico com capacidade de instância EC2 totalmente dedicada ao seu uso
 - Permite que você atenda aos requisitos de conformidade e use suas licenças de software vinculadas ao servidor existentes (por-socket, por-core, por licensa de software de maquina vrtual)
@@ -224,10 +239,12 @@ de alto desempenho:
 - Útil para software que tem modelo de licenciamento complicado (BYOL — Bring Your Own License)
 - Ou para empresas que têm fortes necessidades regulatórias ou de conformidade
 
+
 ### EC2 Dedicated Instances 
 - Instances run on hardware that’s dedicated to you
 - May share hardware with other instances in same account
 - No control over instance placement (can move hardware after Stop / Start)
+
 
 ### Reservas de Capacidade EC2
 - Reserve capacidade de instâncias On-Demand em uma AZ específica para qualquer duração
@@ -236,6 +253,7 @@ de alto desempenho:
 - Combine com Instâncias Reservadas Regionais e Planos de Economia para se beneficiar de descontos de cobrança
 - Você é cobrado pela taxa On-Demand, independentemente de executar instâncias ou não
 - Adequado para cargas de trabalho ininterruptas de curto prazo que precisam estar em uma AZ específica
+
 
 ### Qual opção de compra é a certa para mim?
 Vamos confaram a planejar uma viagem até um resort: 
@@ -248,6 +266,7 @@ quartos. Você pode ser expulso a qualquer momento se alguém estiver disposto a
 - **Anfitriões dedicados:** reservamos um prédio inteiro do resort
 - **Reservas de capacidade:** você reserva um quarto por um período com preço integral, mesmo que não fique nele
 
+
 ### Solicitações de instância spot do EC2
 - Pode obter um desconto de até 90% em comparação com o On-demand
 - Defina o preço spot máximo e obtenha a instância enquanto o preço spot atual < máximo
@@ -258,6 +277,7 @@ quartos. Você pode ser expulso a qualquer momento se alguém estiver disposto a
   - Em situações raras, a instância pode ser recuperada
 - Usado para trabalhos em lote, análise de dados ou cargas de trabalho que são resilientes a falhas.
 - Não é ótimo para trabalhos ou bancos de dados críticos
+
 
 ### Spot Fleets
 - Spot Fleets = conjunto de Instâncias Spot + (opcional) Instâncias On-Demand
@@ -285,6 +305,7 @@ quartos. Você pode ser expulso a qualquer momento se alguém estiver disposto a
 - IPv6 é mais novo e resolve problemas para a Internet das Coisas (IoT).
 - IPv4 permite 3,7 bilhões de endereços diferentes no espaço público
 - IPv4: [0-255].[0-255].[0-255].[0-255].
+
 
 ## IP privado vs. IP público (IPv4) - Diferenças fundamentais
 - **IP público:**
@@ -317,6 +338,7 @@ isso).
   - Em vez disso, use um IP público aleatório e registre um nome DNS para ele
   - Ou, como veremos mais tarde, use um balanceador de carga e não use um IP público
 
+
 ## IP privado vs. IP público (IPv4) - Hand on
 - Por padrão, sua máquina EC2 vem com:
   - Um IP privado para a rede interna da AWS
@@ -329,6 +351,7 @@ isso).
 - Se sua máquina for parada e depois iniciada,
 - IP público pode mudar
 
+
 ## Grupos de posicionamento - Placement Groups
 - Às vezes, você quer controlar a estratégia de posicionamento da instância EC2
 - Essa estratégia pode ser definida usando grupos de posicionamento
@@ -336,6 +359,7 @@ isso).
   - **Cluster** — agrupa instâncias em um grupo de baixa latência em uma única Zona de disponibilidade
   - **Spread** — espalha instâncias pelo hardware subjacente (máximo de 7 instâncias por grupo por AZ)
   - **Partition** — espalha instâncias por muitas partições diferentes (que dependem de diferentes conjuntos de racks) dentro de uma AZ. Escala para centenas de instâncias EC2 por grupo (Hadoop, Cassandra, Kafka)
+
 
 ### Grupos de posicionamento - Cluster
 - **Prós:**
@@ -346,6 +370,7 @@ isso).
   - Tarefa de Big Data que precisa ser concluída rapidamente
   - Aplicativo que precisa de latência extremamente baixa e alta taxa de transferência de rede
 ![image](https://github.com/user-attachments/assets/bd2aaa4c-5398-411c-8f06-9442bf801c72)
+
 
 ### Grupos de posicionamento - Spread (Distribuição)
 - **Prós:**
@@ -360,6 +385,7 @@ isso).
  
 ![Capturar](https://github.com/user-attachments/assets/34176721-40ba-4166-84f7-77f7ad0bba33)
 
+
 ### Grupos de posicionamentos Partição
 - Até 7 partições por AZ
 - Pode abranger várias AZs na mesma região
@@ -367,8 +393,8 @@ isso).
 - As instâncias em uma partição não compartilham racks com as instâncias nas outras partições
 - Uma falha de partição pode afetar muitos EC2, mas não afetará outras partições
 - As instâncias EC2 têm acesso às informações da partição como metadados
-- Casos de uso: HDFS, HBase, Cassandra,
-Kafka
+- Casos de uso: HDFS, HBase, Cassandra, Kafka
+
 
 ## Elastic Network Interfaces (ENI)
 - Componente lógico em uma VPC que representa uma placa de rede virtual
@@ -402,6 +428,7 @@ Kafka
   - Processamento de longa duração
   - Salvando o estado da RAM
   - Serviços que levam tempo para inicializar
+
  
 ### EC2 Hibernate – o que devemos saber...
 - **Famílias de instâncias suportadas** – C3, C4, C5, I3, M3, M4, R3, R4, T2, T3, …
@@ -421,6 +448,7 @@ Kafka
 - Analogia: pense nelas como um "pendrive de rede"
 - Nível gratuito: 30 GB de armazenamento EBS gratuito do tipo General Purpose (SSD) ou Magnetic por mês
 
+
 ## Volume EBS
 - É uma unidade de rede (ou seja, não uma unidade física)
   - Ela usa a rede para comunicar a instância, o que significa que pode haver um pouco de latência
@@ -433,6 +461,7 @@ Kafka
 - Tenha uma capacidade provisionada (tamanho em GBs e IOPS)
   - Você é cobrado por toda a capacidade provisionada
   - Você pode aumentar a capacidade da unidade ao longo do tempo
+
  
 ## EBS – Delete on Termination attribute
 - Controla o comportamento do EBS quando uma instância EC2 é encerrada
@@ -441,6 +470,7 @@ Kafka
 - Isso pode ser controlado pelo console da AWS/AWS CLI
 - **Caso de uso:**
   - preservar o volume raiz quando a instância é encerrada
+
 
 ## EBS Snapshots
 - Faça um backup (snapshot) do seu volume EBS em um ponto no tempo
@@ -463,3 +493,190 @@ Kafka
   - Um AMI público: fornecido pela AWS
   - Seu próprio AMI: você os cria e os mantém você mesmo
   - Um AMI do AWS Marketplace: um AMI que outra pessoa criou (e potencialmente vende)
+
+
+## Processo AMI (de uma instância EC2)
+- Inicie uma instância EC2 e personalize-a
+- Pare a instância (para integridade de dados)
+- Crie uma AMI – isso também criará snapshots do EBS
+- Inicie instâncias de outras AMIs
+
+![image](https://github.com/user-attachments/assets/2d9f11cb-8a59-4d5e-94af-9f8da7f4b18f)
+
+
+## EC2 Instance Store
+- Volumes EBS são unidades de rede com desempenho bom, mas "limitado"
+- Se você precisa de um disco de hardware de alto desempenho, use EC2 Instance Store
+- Melhor desempenho de E/S
+- EC2 Instance Store perde seu armazenamento se for interrompido (efêmero)
+- Bom para buffer / cache / dados temporários / conteúdo temporário
+- Risco de perda de dados se o hardware falhar
+- Backups e replicação são de sua responsabilidade
+
+
+## Tipos de volume EBS
+- Os volumes EBS vêm em 6 tipos
+  - **gp2 / gp3 (SSD):** volume SSD de uso geral que equilibra preço e desempenho para uma ampla variedade de cargas de trabalho
+  - **io1 / io2 Block Express (SSD):** volume SSD de mais alto desempenho para cargas de trabalho de missão crítica de baixa latência ou alto rendimento
+  - **st1 (HDD):** volume HDD de baixo custo projetado para cargas de trabalho de alto rendimento acessadas com frequência
+  - **sc1 (HDD):** volume HDD de menor custo projetado para cargas de trabalho acessadas com menos frequência
+
+- Os volumes EBS são caracterizados em Tamanho | Rendimento | IOPS (operações de E/S por segundo)
+- Em caso de dúvida, consulte sempre a documentação da AWS.
+- Somente gp2/gp3 e io1/io2 Block Express podem ser usados ​​como volumes de inicialização
+
+
+## Tipos de volume EBS Casos de uso
+### SSD de uso geral
+- Armazenamento econômico, baixa latência
+- Volumes de inicialização do sistema, desktops virtuais, ambientes de desenvolvimento e teste
+- 1 GiB - 16 TiB
+  
+- **gp3:**
+  - Linha de base de 3.000 IOPS e taxa de transferência de 125 MiB/s
+  - Pode aumentar IOPS até 16.000 e taxa de transferência até 1000 MiB/s independentemente
+
+- **gp2:**
+  - Pequenos volumes gp2 podem estourar IOPS para 3.000
+  - O tamanho do volume e IOPS são vinculados, o IOPS máximo é 16.000
+  - 3 IOPS por GB, significa que em 5.334 GB estamos no IOPS máximo
+
+
+### SSD Provisioned IOPS (PIOPS)
+- Aplicativos empresariais críticos com desempenho de IOPS sustentado
+- Ou aplicativos que precisam de mais de 16.000 IOPS
+- Ótimo para cargas de trabalho de bancos de dados (sensíveis ao desempenho e consistência do armazenamento)
+- **io1 (4 GiB - 16 TiB):**
+  - PIOPS máx.: 64.000 para instâncias Nitro EC2 e 32.000 para outras
+  - Pode aumentar PIOPS independentemente do tamanho do armazenamento
+- **io2 Block Express (4 GiB - 64 TiB):**
+  - Latência abaixo de milissegundos
+  - PIOPS máx.: 256.000 com uma proporção de IOPS:GiB de 1.000:1
+- Suporta EBS Multi-attach
+
+
+### Unidades de disco rígido (HDD) 
+- Não pode ser um volume de inicialização
+- 125 GiB a 16 TiB 
+- **HDD otimizado para throughput (st1)**
+  - Big Data, data warehouses, processamento de log 
+  - throughput máximo de 500 MiB/s – IOPS máximo de 500
+
+- **HDD frio (sc1):**
+  - Para dados acessados ​​com pouca frequência 
+  - Cenários em que o menor custo é importante 
+- throughput máximo de 250 MiB/s – IOPS máximo de 250
+
+
+## EBS Multi-Attach – família io1/io2
+- Anexar o mesmo volume EBS a várias instâncias EC2 na mesma AZ
+- Cada instância tem permissões totais de leitura e gravação para o volume de alto desempenho
+- Caso de uso:
+  - Obter maior disponibilidade de aplicativos em aplicativos Linux em cluster (ex: Teradata)
+  - Os aplicativos devem gerenciar operações de gravação simultâneas
+- Até 16 instâncias EC2 por vez
+- Deve usar um sistema de arquivos que tenha reconhecimento de cluster (não XFS, EXT4, etc…)
+
+![image](https://github.com/user-attachments/assets/654e3a2b-95de-4f6f-8374-008af4cef045)
+
+
+## Criptografia EBS
+- Ao criar um volume EBS criptografado, você obtém o seguinte:
+  - Dados em repouso são criptografados dentro do volume
+  - Todos os dados em movimento entre a instância e o volume são criptografados
+  - Todos os snapshots são criptografados
+  - Todos os volumes criados a partir do snapshot
+- Criptografia e descriptografia são manipuladas de forma transparente (você não tem nada a fazer)
+- A criptografia tem um impacto mínimo na latência
+- A Criptografia EBS aproveita chaves do KMS (AES-256)
+- Copiar um snapshot não criptografado permite criptografia
+- Snapshots de volumes criptografados são criptografados
+
+
+## Criptografia: criptografar um volume EBS não criptografado
+- Criar um instantâneo EBS do volume
+- Criptografar o instantâneo EBS (usando cópia)
+- Criar um novo volume ebs a partir do instantâneo (o volume também será criptografado)
+- Agora você pode anexar o volume criptografado à instância original
+
+## Amazon EFS – Elastic File System
+- NFS gerenciado (network file system) que pode ser montado em muitos EC2
+- EFS funciona com instâncias EC2 em multi-AZ
+- Altamente disponível, escalável, caro (3x gp2), pagamento por uso
+
+![image](https://github.com/user-attachments/assets/9afbc963-6636-4b7f-899b-42bc44b35df6)
+
+
+## Amazon EFS – Elastic File System
+- Casos de uso: gerenciamento de conteúdo, serviço web, compartilhamento de dados, Wordpress
+- Usa protocolo NFSv4.1
+- Usa grupo de segurança para controlar o acesso ao EFS
+- Compatível com AMI baseado em Linux (não Windows)
+- Criptografia em repouso usando KMS
+- Sistema de arquivos POSIX (~Linux) que tem uma API de arquivo padrão
+- O sistema de arquivos é dimensionado automaticamente, pagamento por uso, sem planejamento de capacidade!
+
+
+## EFS – Classes de desempenho e armazenamento
+- Escala EFS
+  - Milhares de clientes NFS simultâneos, taxa de transferência de 10 GB+/s
+  - Cresça para um sistema de arquivos de rede em escala de petabytes, automaticamente
+
+- Modo de desempenho (definido no momento da criação do EFS)
+  - Uso geral (padrão) – casos de uso sensíveis à latência (servidor web, CMS, etc…)
+  - E/S máxima – latência mais alta, taxa de transferência, altamente paralelo (big data, processamento de mídia)
+
+- Modo de taxa de transferência
+  - Bursting – 1 TB = 50 MiB/s + burst de até 100 MiB/s
+  - Provisionado – defina sua taxa de transferência independentemente do tamanho do armazenamento, ex: 1 GiB/s para armazenamento de 1 TB
+  - Elástico – dimensiona automaticamente a taxa de transferência para cima ou para baixo com base em suas cargas de trabalho
+    - Até 3 GiB/s para leituras e 1 GiB/s para gravações
+    - Usado para cargas de trabalho imprevisíveis
+
+
+## EFS – Classes de armazenamento
+- Camadas de armazenamento (recurso de gerenciamento de ciclo de vida – mover arquivo após N dias)
+  - Padrão: para arquivos acessados ​​com frequência
+  - Acesso pouco frequente (EFS-IA): custo para recuperar arquivos, menor preço para armazenar.
+  - Arquivo: dados raramente acessados ​​(poucas vezes por ano), 50% mais barato
+  - Implementar políticas de ciclo de vida para mover arquivos entre camadas de armazenamento
+    
+- Disponibilidade e durabilidade
+  - Padrão: Multi-AZ, ótimo para prod
+  - Uma zona: Uma AZ, ótimo para dev, backup habilitado por padrão, compatível com IA (EFS One Zone-IA)
+
+- Mais de 90% em economia de custos
+
+![image](https://github.com/user-attachments/assets/f4d99662-f1ce-4542-b045-58c20b349434)
+
+
+## EBS vs EFS
+### Elastic Block Storage
+- Volumes EBS…
+  - uma instância (exceto multi-attach io1/io2)
+  - são bloqueados no nível da Zona de Disponibilidade (AZ)
+  - gp2: IO aumenta se o tamanho do disco aumentar
+  - gp3 e io1: podem aumentar IO independentemente
+
+- Para migrar um volume EBS através de AZ
+  - Tirar um snapshot
+  - Restaurar o snapshot para outro AZ
+  - Os backups EBS usam IO e você não deve executá-los enquanto seu aplicativo estiver lidando com muito tráfego
+  
+- Os volumes EBS raiz de instâncias são encerrados por padrão se a instância EC2 for encerrada. (você pode desabilitar isso)
+
+![image](https://github.com/user-attachments/assets/45fef556-97d3-414b-ab8b-fa6b86b6e40d)
+
+
+### Elastic File System
+- Montagem de centenas de instâncias em AZ
+- EFS compartilha arquivos de site (WordPress)
+- Somente para instâncias Linux (POSIX)
+- EFS tem um ponto de preço mais alto que EBS
+- Pode aproveitar os níveis de armazenamento para economia de custos
+- Lembre-se: EFS vs EBS vs Instance Store
+
+![image](https://github.com/user-attachments/assets/9b9c0cc5-af9e-4133-ba44-9bde8dd348c7)
+
+
+
