@@ -155,6 +155,20 @@ servidores (por exemplo, instâncias EC2)
 
 ![image](https://github.com/user-attachments/assets/b1caa46d-14f3-4049-bd35-b2e0814ce55d)
 
+## Balanceador de carga de rede (v2)
+- Balanceadores de carga de rede (camada 4) permitem:
+  - Encaminhar tráfego TCP e UDP para suas instâncias
+  - Lidar com milhões de solicitações por segundo
+  - Menos latência ~100 ms (vs 400 ms para ALB)
+    
+- NLB tem um IP estático por AZ e suporta atribuição de IP elástico(útil para lista de permissões de IP específico)
+- NLB são usados ​​para desempenho extremo, tráfego TCP ou UDP
+- Não incluído no nível gratuito da AWS
 
+### Balanceador de Carga de Rede – Grupos de Destino
+- Instâncias EC2
+- Endereços IP – devem ser IPs privados
+- Balanceador de Carga de Aplicativo
+- Verificações de Saúde suportam os Protocolos TCP, HTTP e HTTPS
 
-
+![image](https://github.com/user-attachments/assets/4858ee41-4a5f-4f51-bd12-c24c775a2185)
